@@ -1,0 +1,127 @@
+.chart-container
+{
+    margin : 30px auto;
+    padding : 15px;
+    width : 100%;
+    max-width : 400px;
+    position : relative;
+    
+}
+.chart-container svg
+{
+    position: relative;
+    z-index : 2;
+}
+.line
+{
+    width : 0;
+    opacity : 0;
+    height : 1px;
+    background-color : #ccc;
+    top : calc(50% - 1px);
+    left : 0;
+    position : absolute;
+    z-index : 0;
+    animation: line 1s linear forwards;
+}
+@keyframes line
+{
+    from
+    {
+        width : 0;
+        opacity : 0;
+    }
+    to
+    {
+        width : 100%;
+        opacity : 1;
+    }
+}
+
+.obj1
+{
+    animation: obj1 1s linear forwards;
+    transform: translateY(198px) scaleY(0);
+}
+@keyframes obj1
+{
+    from
+    {
+        transform: translateY(198px) scaleY(0);
+    }
+    to
+    {
+        transform: translateY(0) scaleY(1);
+    }
+}
+
+.obj2
+{
+    animation: obj2 .7s linear forwards;
+    transform: translateY(174px) scaleY(0);
+}
+@keyframes obj2
+{
+    from
+    {
+        transform: translateY(174px) scaleY(0);
+    }
+    to
+    {
+        transform: translateY(0) scaleY(1);
+    }
+}
+
+.obj3
+{
+    animation: obj3 .5s linear forwards;
+
+    transform: translateY(147px) scaleY(1);
+}
+@keyframes obj3
+{
+    from
+    {
+        transform: translateY(147px) scaleY(0);
+    }
+    to
+    {
+        transform: translateY(0px) scaleY(1);
+    }
+}
+
+.obj4
+{
+    animation: obj4 .8s linear forwards;
+
+    transform: translateY(78px) scaleY(1);
+}
+@keyframes obj4
+{
+    from
+    {
+        transform: translateY(78px) scaleY(0);
+    }
+    to
+    {
+        transform: translateY(0px) scaleY(1);
+    }
+}
+
+.obj5
+{
+    animation: obj4 .4s linear forwards;
+
+    transform: translateY(78px) scaleY(1);
+}
+@keyframes obj5
+{
+    from
+    {
+        transform: translateY(78px) scaleY(0);
+    }
+    to
+    {
+        transform: translateY(0px) scaleY(1);
+    }
+}
