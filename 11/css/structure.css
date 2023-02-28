@@ -1,0 +1,470 @@
+/*------------------------------*/
+@font-face
+{
+    font-family: "Acumin Variable Concept";
+    src: url("https://db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.eot");
+    src: url("https://db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.woff") format("woff"), url("https://db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.svg#Acumin Variable Concept") format("svg"); }
+
+.sprite
+{
+    background : url(../img/sprite.png);
+    background-repeat : no-repeat;
+}
+body::before
+{
+    content : '';
+    width : 100%;
+    height : 100vh;
+    display : block;
+    position: fixed;
+    top : 0;
+    left : 0;
+    z-index : 0;
+}
+/*------------------------------*/
+
+::-webkit-scrollbar-button
+{
+    background-image : url('');
+    background-repeat : no-repeat;
+    width : 5px;
+    height : 0px
+}
+::-webkit-scrollbar-track
+{
+    background-color : #222629;
+}
+::-webkit-scrollbar-thumb
+{
+    -webkit-border-radius : 0px;
+    border-radius : 0px;
+    background-color:#666666;
+}
+::-webkit-scrollbar-thumb:hover
+{
+    background-color : #222629;
+}
+::-webkit-resizer
+{
+    background-image : url('');
+    background-repeat:no-repeat;
+    width : 4px;
+    height : 0px
+}
+::-webkit-scrollbar
+{
+    width : 4px;
+}
+.particles-js-canvas-el
+{
+    position : absolute;
+    top : 0;
+    width : 100%;
+    height : 100%;
+}
+/*------------------------------*/
+.row
+{
+    display : flex;
+    justify-content : space-between;
+}
+body
+{
+    position : relative;
+    width : 100%;
+    height : 100vh;
+    
+}
+.page-container
+{
+    position : relative;
+    
+    height : 100vh;
+    padding : 0 15px;
+    margin : 0 auto;
+}
+.page-container::before
+{
+    content : '';
+    height : 100vh;
+    min-height : 100%;
+    width : 3px;
+    background : #191c1e;
+    position : fixed;
+    top : 0;
+    left : calc(50% - 670px);
+    display : block;
+    z-index : 6;
+}
+.page-container, header
+{
+    width : calc(100% - 30px);
+    max-width : 1400px;
+}
+header
+{
+    position : fixed;
+    display : flex;
+    z-index : 5;
+    width : calc(100% - 30px);           
+    height : 210px;
+}
+header::before
+{
+    content : '';
+    width : 100%;
+    height : 210px;
+    position : fixed;
+    top : 0;
+    left : 0;
+    z-index : 0;
+}
+nav
+{
+    position : fixed;
+    z-index : 99;            
+    width : 330px;
+    height : calc(100% - 210px);
+}
+main
+{
+    position : relative;
+    top : 210px;
+}
+article
+{
+    position : relative;
+    margin-left : 330px;
+    overflow: visible;
+    height : calc(100vh - 210px);            
+}
+section
+{            
+    height : 100%;
+}
+
+/*------------------------------*/
+
+body
+{
+    font-size : 16px;
+    font-family: Verdana, Geneva, Tahoma;
+}
+.icon
+{
+    display : inline-block;
+}
+
+/*------------------------------*/
+header .languages-container
+{
+    width : 330px;
+    min-width : 330px;
+    position: relative;
+    z-index : 99;
+    display : flex;
+    align-items: center;
+}
+header .languages
+{
+    margin-left : 40px;
+}
+header .languages .circle
+{
+    display : inline-block;
+    margin : 0 5px;
+}
+header .languages .alt
+{
+    color : #515152;
+}
+header .header-container
+{
+    width : 100%;
+    display : flex;
+    flex-flow: column;
+}
+header .logo
+{
+    width : 167px;
+    min-width : 167px;
+    height : 51px;
+    min-height : 51px;
+    background-position : -364px -10px;
+    margin : 30px 15px;
+}
+header .support-container
+{
+    border-top : 2px solid #86d018;
+    display : flex;
+    justify-content: flex-end;
+    margin-top : -10px;
+}
+header .support-container .title,
+header .support-container .description
+{
+    text-align: center;
+    padding : 5px;
+    display : block;
+    text-decoration: none;
+    text-align: center;
+    font-size: .9rem;
+}
+header .support-container .support .title,
+header .support-container .webtrader .description
+{
+    margin-top : -30px;
+}
+header .support-container .support,
+header .support-container .webtrader
+{
+    margin-right : 10px;
+    margin-left : 10px;
+}
+
+/*------------------------------*/
+#nav-icon1 {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 0px auto;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+  }
+  
+  #nav-icon1 span {
+    display: block;
+    position: absolute;
+    height: 7.5px;
+    width: 100%;
+    background: #fff;
+    border-radius: 0;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+  }
+  
+  #nav-icon1 span:nth-child(1) {
+    top: 0px;
+  }
+  
+  #nav-icon1 span:nth-child(2) {
+    top: 15px;
+  }
+  
+  #nav-icon1 span:nth-child(3) {
+    top: 30px;
+  }
+  
+  #nav-icon1.open span:nth-child(1) {
+    top: 15px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+  
+  #nav-icon1.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+  }
+  
+  #nav-icon1.open span:nth-child(3) {
+    top: 15px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+
+
+nav ul
+{
+    list-style : none;
+    display : block;
+    margin : 0;
+    padding : 0;
+}
+nav ul li
+{
+    margin : 0 0 30px;
+}
+nav ul li a
+{
+    display : flex;
+    text-decoration : none;
+
+}
+nav ul li a span.num
+{
+    display : inline-block;
+    padding : 5px 0;
+}
+nav ul li a p
+{
+    font-family : Verdana, Geneva, Tahoma !important;
+    display : flex;
+    flex-flow : column;
+    border-left : 3px solid #191c1e;
+    padding : 5px 10px;
+    margin-left : 10px;
+    font-size : 1rem;
+}
+nav ul li a span.title
+{
+    text-transform : uppercase;
+    font-size : .8em;
+}
+nav ul li a span.description
+{
+    font-size : .8em;
+}
+
+/*------------------------------*/
+
+#start-trading, #open-account, #start-trading-2, #open-account-2, footer .button
+{
+    padding : 8px 20px;
+    cursor : pointer;
+    font-size : 1rem;
+    position : relative;
+    border : 4px solid transparent;
+    border-radius: 50px;
+    background-clip : padding-box;
+    transition : .6s all;
+}
+#start-trading:after, #open-account:after, #start-trading-2:after, #open-account-2:after, footer .button:after
+{
+    transition: .6s all;
+    position: absolute;  
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    content: '';
+    z-index: -1;
+    background-image: linear-gradient(135deg, rgb(138, 229, 83) 0%, rgb(138, 229, 83) 22%,rgb(110, 203, 71) 22%, rgb(110, 203, 71) 28%,rgb(83, 176, 59) 28%, rgb(83, 176, 59) 72%,rgb(55, 150, 47) 72%, rgb(55, 150, 47) 100%);
+    background-size: 200% 100%;
+    background-position: 0% 0;
+    border-radius: 50px;
+}
+#start-trading-2:after, #open-account-2:after, footer .button:after
+{
+    background-image: linear-gradient(135deg, rgb(191, 24, 29) 0%, rgb(191, 24, 29) 22%,rgb(210, 27, 32) 22%, rgb(210, 27, 32) 28%,rgb(191, 24, 29) 28%, rgb(191, 24, 29) 72%,rgb(210, 27, 32) 72%, rgb(210, 27, 32) 100%);   
+} 
+#start-trading:hover, #open-account:hover, #start-trading-2:hover, #open-account-2:hover, footer .button:hover
+{
+    background-color: transparent;
+    color: white;
+}
+#start-trading:hover:after, #open-account:hover:after, #start-trading-2:hover:after, #open-account-2:hover:after, footer .button:hover:after
+{
+    background-position: 100% 0;
+}
+/*------------------------------*/
+
+.input-container
+{
+    position : relative;
+    margin : 30px auto;
+}
+.input-container label
+{
+    position: absolute;
+    top: 0;
+    font-size: 1rem;
+    margin: 10px;
+    padding: 0 10px;
+    background-color: transparent;
+    color : #7fcfff;
+    -webkit-transition : top .2s ease-in-out, font-size .2s ease-in-out;
+    transition : top .2s ease-in-out, font-size .2s ease-in-out;
+    border-radius : 4px;
+}
+.input-container .active
+{
+    top: -25px;
+    font-size: .85rem;
+}
+  
+input[type=text], input[type=email], input[type=tel]
+{
+    width : calc(100% - 40px);
+    padding : 20px;
+    border-bottom : 1px solid #7fcfff;
+    font-size : 20px;
+    background-color : transparent;
+    color : #7fcfff;
+    font-size : 1rem;
+} 
+  
+input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus
+{
+    outline: none;
+    color : #fff;
+    border-color : #fff;
+}
+
+/*------------------------------*/
+.slider-container
+{
+    position : relative;
+}
+.prevArrow, .nextArrow
+{
+
+    background-color : transparent;
+    border-radius: 100%;
+    cursor : pointer;
+}
+.nextArrow
+{
+    left : 120px;
+}
+.prevArrow span
+{
+    width : 32px;
+    height : 32px;
+    background-position : -284px -660px;    
+    display : block;
+}
+.prevArrow:hover span
+{
+    background-position : -316px -660px;    
+}
+.nextArrow span
+{
+    width : 32px;
+    height : 32px;
+    background-position : -284px -692px;    
+    display : block;
+}
+.nextArrow:hover span
+{
+    background-position : -316px -692px;    
+}
+
+@media screen and (max-width: 1430px)
+{
+    .page-container::before
+    {
+        display : none !important;
+        position: relative;
+        top : initial;
+        left : initial;
+    }
+}

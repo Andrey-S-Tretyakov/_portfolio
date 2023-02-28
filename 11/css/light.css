@@ -1,0 +1,87 @@
+body
+{
+
+    color : #000000;
+    background-color : #dedede; 
+}
+body::before
+{
+    background-image: url('../img/texture-light.png');
+    transition: background 2s ease;
+}
+nav .toggle-button:hover
+{
+    background-color : rgba(0,0,0,.3);
+}
+/*------------------------------*/
+
+::-webkit-scrollbar-track
+{
+    background-color : #dedede;
+}
+::-webkit-scrollbar-thumb
+{
+    background-color:#bc0c11;
+}
+::-webkit-scrollbar-thumb:hover
+{
+    background-color : #222629;
+}
+
+/*------------------------------*/
+header::before
+{
+    background: linear-gradient(to bottom, #dedede 0%, #dedede 60%, rgba(0,0,0,0));
+}
+header .languages .circle
+{
+    color : #bc0c11;
+}
+header .languages .alt
+{
+    color : #ffffff;
+}
+header .logo
+{
+    background-position : -10px -10px;
+}
+header .support-container
+{
+    border-color : #bc0c11;
+}
+header .support-container .support a,
+header .support-container .webtrader a
+{
+    color : #bc0c11;
+}
+/*------------------------------*/
+
+nav ul li a > span
+{
+    color : #ffffff;
+}
+nav ul li a p
+{
+    color : #575757;
+    border-color : #191c1e;
+}
+nav ul li a.active p
+{
+    border-color : #bc0c11;
+}
+nav ul li a.active span
+{
+    color : #000000 !important;
+}
+@media screen and (max-width: 900px)
+{
+    nav,
+    .nav_button
+    {
+        background-color : #dedede;      
+    }
+    header::before
+    {
+        background-color : #dedede;
+    }
+}

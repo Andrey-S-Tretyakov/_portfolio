@@ -1,0 +1,974 @@
+
+nav .nav_button
+{
+    display : none;
+}
+.slide-1
+{
+
+    transition: background 2s ease; 
+    background-size: 70%;
+    background-position-y: -120px;
+    background-repeat: no-repeat;
+}
+.slide-1 h2
+{
+    font-family: "Acumin Variable Concept", Verdana, Geneva, Tahoma, sans-serif;
+    color : #fff;
+    font-size: 4rem;
+    margin-bottom : 30px;
+    text-transform : uppercase;
+}
+.slide-1 h3
+{
+    font-family: "Acumin Variable Concept", Verdana, Geneva, Tahoma, sans-serif;
+    color : #1d8ac7;
+    font-size: 1.5rem;
+    margin-bottom : 30px;
+}
+.slide-1 p
+{
+    width : 100%;
+    max-width : 450px;
+    text-align: left;
+}
+#slide-1-1
+{
+    display : block;
+}
+#slide-1-2
+{
+    display : block;
+    display : none;
+    
+    background-size: 45%;
+    background-position: left bottom;
+    background-repeat: no-repeat;    
+}
+#slide-1-2 p
+{
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+#slide-1-2 form
+{
+    width : 50%;   
+    margin-left : 50%;
+}
+#slide-1-2 h3
+{
+    color : #fff;
+    text-align: center;
+}
+#slide-1-2 form a,
+#slide-1-2 form p
+{
+    font-size: .85rem;
+    color : #ccc;
+    margin : 10px;
+}
+#slide-1-2 button
+{
+    min-width: 180px;
+    margin : 10px;
+}
+/*------------------------------*/
+
+.slide-2 h2
+{
+    font-family: "Acumin Variable Concept", Verdana, Geneva, Tahoma, sans-serif;
+    color : #000000;
+    font-size: 4rem;
+    margin-bottom : 5px;
+    text-transform : uppercase;
+}
+.slide-2 h3
+{
+    font-family: "Acumin Variable Concept", Verdana, Geneva, Tahoma, sans-serif;
+    color : #d50000;
+    font-size: 1.5rem;
+    margin-bottom : 30px;
+}
+.slide-2 ul
+{
+    list-style : none;
+    width : 50%;
+    margin-left : 50px;
+}
+.slide-2 ul li
+{
+    margin : 30px auto;
+}
+.slide-2 ul li h4
+{
+    font-size : 1.4rem;
+    margin-bottom : 15px;
+}
+.slide-2
+{
+    padding-top : 100px;
+    position : relative;
+}
+.slide-2 .icon-0-1
+{
+    width : 264px;
+    min-width: 264px;
+    max-width : 264px;
+    height : 524px;
+    min-height : 524px;
+    max-height : 524px;
+    background-position: -10px -71px;
+    position : absolute;
+    margin-top : 30px;
+}
+.slide-2 .icon-0-2
+{
+    width : 287px;
+    min-width: 287px;
+    height : 579px;
+    min-height : 579px;
+    background-position: -284px -71px;
+    position : relative;
+    left : 100px;
+}
+.slide-2 ul
+{
+    padding-left : 180px;
+}
+
+.slide-2 ul li
+{
+    display : flex;
+}
+.slide-2 ul li p
+{
+    text-align: left;
+}
+.slide-2 .icon-1,
+.slide-2 .icon-2,
+.slide-2 .icon-3
+{
+    width : 69px;
+    min-width : 69px;
+    height : 68px;
+    min-height : 68px;
+    background-position : -10px -660px;
+    margin-right : 15px;
+}
+.slide-2 .icon-2
+{
+    background-position : -89px -660px;
+}
+.slide-2 .icon-3
+{
+    background-position : -168px -660px;
+}
+#slide-2-2
+{
+    display : block;
+    display : none;
+    width : 50%;    
+}
+#slide-2-2 .input-container label
+{
+    color : #999;
+}
+#slide-2-2 input[type=text], #slide-2-2 input[type=email], #slide-2-2 input[type=tel]
+{
+    border-bottom : 1px solid #aaa;
+    color : #333;
+}
+#slide-2-2  form a,
+#slide-2-2  form p
+{
+    font-size: .85rem;
+    color : #333;
+    margin : 10px;
+}
+#slide-2-2 button
+{
+    min-width: 180px;
+    margin : 10px auto;
+    display : inline-block;
+}
+#slide-2-2 h3
+{
+    margin : 30px auto;
+    text-align : center;
+}
+
+/**/
+
+
+.slide-3 h3
+{
+    font-size : 2.5rem;
+    text-transform : uppercase;
+    margin : 30px 0;
+}
+.slide-3 .icon-1
+{
+    background-position : -10px -738px;
+    width : 496px;
+    min-width : 496px;
+    height : 496px;
+    max-height : 496px;
+}
+.slide-3 .icon-2
+{
+    background-position : -10px -1244px;
+    width : 496px;
+    min-width : 496px;
+    height : 495px;
+    max-height : 495px;
+}
+.slide-3 .icon-3
+{
+    background-position : -10px -1749px;
+    width : 496px;
+    min-width : 496px;
+    height : 494px;
+    max-height : 494px;
+}
+.slide-3 .icon-4
+{
+    background-position : -10px -2253px;
+    width : 496px;
+    min-width : 496px;
+    height : 496px;
+    max-height: 496px;
+}
+
+/**/
+
+
+
+.slider-container
+{
+    position : relative;
+    display : flex;
+    align-items : center;
+    justify-content: space-between;
+}
+#slider-1
+{
+
+    width : 80%;
+
+}
+#slider-1 .slick-list .slick-slide
+{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#slider-1-nav
+{
+    width : 15%;
+}
+
+#slider-1-nav .slick-list
+{
+    position : relative;
+    padding : 0 !important;
+    height : 170px !important;
+}
+.prevArrow, .nextArrow
+{
+    width : 40px;
+    height : 40px;
+    position : absolute;
+    bottom : -50px;
+    left : 40px;
+}
+.nextArrow
+{
+    left : 90px;
+}
+#slider-1-nav .slick-current p
+{
+    font-size: 2.5em;
+    opacity : 1 !important;
+}
+
+#slider-1-nav .slick-list p
+{
+    height : 50px;
+    min-height : 50px;
+    max-height : 50px;
+    text-align : center;
+    display : flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin : 0 !important;
+    padding : 0 !important;
+    transition : .3s ease;
+    opacity : .7;
+}
+#slider-1 .slick-list p
+{
+    margin-left : 30px;
+    max-width : 200px;
+    text-align : left;
+    padding : 10px;
+}
+
+/**/
+.slide-4
+{
+    min-height : 850px;
+}
+.slide-4 h3
+{
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color : #000;
+    margin : 30px 0 0;
+    font-family: "Acumin Variable Concept", Verdana, Geneva, Tahoma, sans-serif;
+}
+.slide-4 h4
+{
+    color : #d50000;
+    font-size: 1.5em;
+    margin : 0 0 30px;
+    font-family: "Acumin Variable Concept", Verdana, Geneva, Tahoma, sans-serif;
+}
+.slide-4 .description
+{
+    position : relative;
+}
+.slide-4 .description p
+{
+    width : 100%;
+    max-width : 400px;
+    text-align : left;
+}
+.slide-4 .icon-1
+{
+    background-position: -10px -3532px;
+    width : 325px;
+    height : 643px;
+    display : block;
+    position : absolute;
+    top : 0px;
+    left : 550px;
+}
+.slide-4 .icon-2
+{
+    background-position: -10px -2759px;
+    width : 889px;
+    height : 483px;
+    display : block;
+    position : absolute;
+    top : 100px;
+    left : 0px;
+}
+.slide-4 .icon-3
+{
+    background-position: -10px -3252px;
+    width : 889px;
+    height : 270px;
+    display : block;
+    position : absolute;
+    top : 220px;
+    left : 55px;
+}
+
+/**/
+
+.slide-5 h3
+{
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color : #fff;
+    margin : 30px 0 0;
+    font-family: "Acumin Variable Concept", Verdana, Geneva, Tahoma, sans-serif;
+}
+.slide-5 h4
+{
+    color : #0a9cea;
+    font-size: 1.5em;
+    margin : 0 0 30px;
+    font-family: "Acumin Variable Concept", Verdana, Geneva, Tahoma, sans-serif;
+}
+.slide-5 ul
+{
+    display : flex;
+    list-style: none;
+    text-align: center;
+    justify-content: space-between;
+}
+.slide-5 ul li
+{
+    margin : 30px;
+    border : 1px solid #0a9cea;
+    position : relative;
+    text-align: center;
+    width : 30%;
+    padding : 40px 30px 30px;
+    color : #fff;
+    transition: .3s;
+}
+.slide-5 ul li i
+{
+    width : 60px;
+    height : 60px;
+    min-width : 60px;
+    min-height : 60px;
+    display : block;
+    top : -34px;
+    left : calc(50% - 34px);
+    position : absolute;
+    border: 8px solid rgba(255,255,255,.2);
+    border-radius: 100%;
+}
+.slide-5 ul li:hover
+{
+    background-color : #0a9cea;
+    transform: translateY(-5px);
+}
+.slide-5 ul li:hover i
+{
+    border-color : #0a9cea;
+}
+.slide-5 ul li:hover p
+{
+    color : #7fcfff;
+}
+.slide-5 ul li h5
+{
+    text-align : center;
+    display : block;
+    margin : 15px auto;
+    font-size: 1.2em;
+}
+.slide-5 ul li p
+{
+    text-align : center;
+    margin : 0 auto;
+}
+.slide-5 .icon-1
+{
+    background-position: -345px -3532px;
+}
+.slide-5 .icon-2
+{
+    background-position: -415px -3532px;
+}
+.slide-5 .icon-3
+{
+    background-position: -345px -3602px;
+}
+.slide-5 .icon-4
+{
+    width : 80px;
+    height : 48px;
+    min-width : 80px;
+    min-height : 48px;
+    background-position: -348px -660px;
+    display : block;
+}
+.slide-5 .features p
+{
+    display : flex;
+    margin-bottom : 15px;
+    text-align : left;
+}
+.slide-5 .features p span
+{
+    font-size: .85em;
+}
+.slide-5 .features p i
+{
+    margin-right : 5px;
+}
+.slide-5 form
+{
+    width : 50%;
+    margin : 0 auto;
+}
+.slide-5 form h3
+{
+    font-size: 2em;
+    display : block;
+    margin : 0 auto;
+    text-align : center;
+    text-transform: none;
+    font-weight: normal;
+    color : #7fcfff;
+}
+.slide-5 form label
+{
+    color : #7fcfff;
+}
+.slide-5 form a
+{
+    color : #fff;
+}
+.slide-5 form button
+{
+    margin : 10px;
+    min-width : 150px;
+}
+.slide-5 form p
+{
+    text-align : left;
+    font-size: .75em;
+    margin : 5px 0;
+}
+
+.slide-5
+{
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+#start-trading-3
+{
+    cursor: pointer;
+}
+#slide-5-1
+{
+    padding-top : 30px;
+    padding-bottom : 30px;
+}
+#slide-5-2
+{
+    display : block;
+    display : none;
+}
+.slide-6 h3
+{
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color : #000;
+    margin : 180px 0 0;
+    font-family: "Acumin Variable Concept", Verdana, Geneva, Tahoma, sans-serif;
+}
+.slide-6 .description
+{
+    max-width : 400px;
+    margin : 30px 0 0;
+    text-align : left;
+}
+.slide-6 .icons
+{
+    width : 170px;
+    min-width : 170px;
+    min-height : 65px;
+    height : 65px;
+    background-position: -10px -4241px;
+    display : block;
+}
+.slide-6 ul
+{
+    list-style: none;
+    display : flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+.slide-6 ul li
+{
+    margin : 10px;
+    width : 170px;
+}
+.slide-6 .icon-1
+{
+    background-position: -10px -4241px;    
+}
+.slide-6 .icon-1.en
+{
+    background-position: -10px -4306px;   
+}
+.slide-6 .icon-2
+{
+    background-position: -190px -4241px;    
+}
+.slide-6 .icon-2.en
+{
+    background-position: -190px -4306px;    
+}
+.slide-6 .icon-3
+{
+    background-position: -370px -4241px;    
+}
+.slide-6 .icon-4
+{
+    background-position: -550px -4241px;    
+}
+.slide-6 .icon-5
+{
+    background-position: -730px -4241px;    
+}
+
+.slide-6 .icon-6
+{
+    width : 530px;
+    height : 473px;
+    min-width : 530px;
+    min-height : 473px;
+    background-position: -370px -3672px;
+    margin-right : 5px;
+}
+.slide-6 .button
+{
+    display : inline-block;
+    padding : 15px 30px;
+    color : #575757;
+    border : 1px solid #575757;
+    border-radius: 30px;
+    margin : 0px 0 30px;
+    text-decoration: none;
+    text-align : center;
+    transition: .3s;
+}
+.slide-6 .button:hover
+{
+    background-color : #575757;
+    color : #fff;
+}
+
+footer
+{
+    position : relative;
+    bottom : 0;
+    width : calc(100% + 330px);
+    background-color : #222629;
+    color : #fff;
+    left : -330px;
+    height : 130px;
+    z-index : 99;
+    display : flex;
+    align-items: center;
+    align-content: center;
+    color : #575757;
+}
+footer > div
+{
+    padding : 15px;
+    width : 100%;
+    display : flex;
+    align-items : center;
+    justify-content: space-between;
+}
+footer .button
+{
+    display : inline-block;
+    text-decoration: none;
+    color : #fff !important;
+    background : transparent !important;
+    border : none !important;
+    min-width : 200px;
+    margin : 0 15px !important;
+}
+footer p
+{
+    margin : 0 30px;
+    padding : 0;
+    font-size: .8em;
+}
+footer .icon
+{
+    width : 170px;
+    min-width : 170px;
+    height : 51px;
+    background-position : -190px -10px;
+    margin : 0 30px;
+}
+
+@media screen and (max-width: 1300px)
+{
+    .slide-5 ul li p
+    {
+        display: none !important;
+    }
+    .slide-5 .row
+    {
+        flex-flow: wrap;
+    }
+    .slide-5 .features
+    {
+        display : flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .slide-5 .features p
+    {
+        margin : 0 10px;
+    }
+    #slide-5-1 img
+    {
+        width : 100%;
+    }
+    .slide-5 ul
+    {
+        margin : 30px auto;
+    }
+    .slide-5 ul li
+    {
+        padding : 40px 15px 5px;
+    }
+    .slide-6 h3
+    {
+        margin-top : 250px
+    }
+    .slide-4 .icon-1
+    {
+        width: 147px;
+        height: 281px;
+        background-position: -1px -1542px;
+        background-size: 280%;
+        top: 133px;
+        left: 262px;
+    }
+    .slide-4 .icon-2
+    {
+        width: 430px;
+        height: 217px;
+        background-position: -10px -1260px;
+        background-size: 100%;
+        top: 168px;
+    }
+    .slide-4 .icon-3
+    {
+        width : 430px;
+        height : 125px;
+        background-position : -10px -1487px;
+        background-size : 100%;
+    }
+}
+@media screen and (max-width: 1160px)
+{
+    .slide-2 .icon-0-1,
+    .slide-2 .icon-0-2
+    {
+        display : none !important; 
+    }
+    .slide-2 ul
+    {
+        margin : 0 auto;
+        padding : 0;
+        width : auto;
+    }
+    .slide-3 .icon-1,
+    .slide-3 .icon-2,
+    .slide-3 .icon-3,
+    .slide-3 .icon-4
+    {
+        transform: scale(.5);
+    }
+    #slider-1 .slick-list .slick-slide
+    {
+        flex-flow: wrap;
+    }
+    #slider-1 .slick-list p
+    {
+        margin : -100px 30px 0;
+        max-width: initial;
+        text-align: center;
+    }
+    .slide-4 .description p
+    {
+        max-width: initial;
+    }
+    .slide-6 .icon-6
+    {
+        background-size: 175%;
+        width: 340px;
+        height: 293px;
+        min-width: 340px;
+        min-height: 293px;
+        background-position: -228px -2317px;
+        margin-right: 5px;
+    }
+    .slide-5 ul
+    {
+        flex-flow : column;
+    }
+    .slide-5 ul li
+    {
+        width : auto;
+        padding : 10px;
+        cursor: initial !important;
+    }
+    .slide-5 ul li i
+    {
+        top : -38px;
+        left: calc(0% - 38px);
+    }
+    #slide-5-1,
+    #slide-5-2
+    {
+        display : none !important;
+    }
+    #slide-1-2 form
+    {
+        margin : 15px auto;
+        width : 90%;
+    }
+    #slide-1-2 p
+    {
+        font-size: 1em;
+    }
+    .slide-1
+    {
+        background-image: none !important;
+    }
+}
+@media screen and (max-width: 900px)
+{
+    header .languages-container
+    {
+        min-width: initial;
+        width: auto;
+    }
+    nav
+    {
+        left : -330px;
+        transition: .3s;
+    }
+    nav.active
+    {
+        left : 15px;
+    }
+    nav .nav_button
+    {
+        display : flex;
+        align-items: center;
+        width : 50px;
+        height : 50px;
+        top : 0;
+        right : -50px;
+        position : absolute;
+        cursor : pointer;
+    }
+    article
+    {
+        margin-left : 60px;
+    }
+    nav
+    {
+        box-shadow: 10px 10px 8px rgba(0,0,0,.2);
+    }
+    footer
+    {
+        display : none !important;
+    }
+}
+@media screen and (max-width: 760px)
+{
+    .slide-2 h2,
+    .slide-3 h3,
+    .slide-4 h3,
+    .slide-5 h3,
+    .slide-6 h3
+    {
+        font-size: 2rem;
+        font-weight: normal;
+    }
+    .slide-6 .icon-6
+    {
+        display : none;
+    }
+    .slide-6 .button
+    {
+        margin : 30px auto;
+        display : block;
+    }
+}
+@media screen and (max-width: 480px)
+{
+    header .languages-container,
+    .slide-3 .icon-1, .slide-3 .icon-2, .slide-3 .icon-3, .slide-3 .icon-4,
+    .slide-4 .icon-1, .slide-4 .icon-2, .slide-4 .icon-3,
+    .slide-5 .features p i,
+    .slide-5 ul li i,
+    #slide-1-2 p:first-child
+    {
+        display : none !important;
+    }
+    #slide-1-2 .row
+    {
+        flex-flow: column;
+    }
+    header .support-container
+    {
+        border : none;
+        margin : 5px auto;
+        justify-content: flex-start;
+    }
+    header .support-container .support .title, header .support-container .webtrader .description
+    {
+        margin : auto;
+    }
+    .slide-2 h2,
+    .slide-3 h3,
+    .slide-4 h3,
+    .slide-5 h3,
+    .slide-6 h3,
+    h3 ,h4
+    {
+        font-size: 1.2rem !important;
+        font-weight: normal;
+        margin : 10px 0 !important;
+    }
+    #slider-1-nav
+    {
+        width : 30%;
+    }
+    .slide-2 ul li, .slide-5 .features
+    {
+        flex-flow : column;
+        align-items: center;
+        text-align : center;
+    }
+    .slide-2 ul li *
+    {
+        text-align : center !important;
+    }
+    .slide-2 .icon-1, .slide-2 .icon-2, .slide-2 .icon-3
+    {
+        margin : 0 auto;
+    }
+    #slider-1 .slick-list p
+    {
+        margin : 15px auto;
+    }
+    .slide-5 .features
+    {
+        align-items: flex-start;
+    }
+    .slide-5 .features p
+    {
+        margin : 5px 0;
+    }
+    .slide-5 ul li
+    {
+        padding : 5px;
+        margin : 5px auto;
+        width : 100%;
+        background-color : rgba(255,255,255,.1);
+    }
+}
+@media screen and (max-height: 580px)
+{
+    body::after
+    {
+        content : '';
+        position : fixed;
+        top : 0px;
+        left : 0;
+        content : 'Flip';
+        display : block;
+        width : 100%;
+        height : 100vh;
+        background-color : rgba(0,0,0,.9);
+        color : #fff;
+        z-index : 999999;
+    }
+}

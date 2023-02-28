@@ -1,0 +1,87 @@
+body
+{
+    
+    color : #ffffff;
+    background-color : #111b21;  
+}
+body::before
+{
+    background-image: url('../img/texture-dark.png');
+    transition: background 2s ease;
+}
+nav .toggle-button:hover
+{
+    background-color : rgba(255,255,255,.3);
+}
+/*------------------------------*/
+
+::-webkit-scrollbar-track
+{
+    background-color : #121b21;
+}
+::-webkit-scrollbar-thumb
+{
+    background-color:#86d018;
+}
+::-webkit-scrollbar-thumb:hover
+{
+    background-color : #121b21;
+}
+
+/*------------------------------*/
+header::before
+{
+    background: linear-gradient(to bottom, #121b21 0%, #121b21 60%, rgba(0,0,0,0));
+}
+header .languages .circle
+{
+    color : #86d018;
+}
+header .languages .alt
+{
+    color : #575757;
+}
+header .logo
+{
+    background-position : -364px -10px;
+}
+header .support-container
+{
+    border-color : #86d018;
+}
+header .support-container .support a,
+header .support-container .webtrader a
+{
+    color : #86d018;
+}
+/*------------------------------*/
+
+nav ul li a > span
+{
+    color : #575757;
+}
+nav ul li a p
+{
+    color : #575757;
+    border-color : #191c1e;
+}
+nav ul li a.active p
+{
+    border-color : #86d018;
+}
+nav ul li a.active span
+{
+    color : #ffffff !important;
+}
+@media screen and (max-width: 900px)
+{
+    nav,
+    .nav_button
+    {
+        background-color : #121b21;        
+    }
+    header::before
+    {
+        background-color : #121b21;
+    }
+}
