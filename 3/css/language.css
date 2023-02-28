@@ -1,0 +1,39 @@
+div#language div.selected
+{
+    cursor : pointer;    
+    min-width : 150px;
+    z-index : 998;
+}
+div#language div.list
+{
+    display : none;
+    background-color : rgba(255,255,255,.9);
+    border : 1px solid rgba(0,0,0,.2);
+    box-shadow : 0 0 10px rgba(0,0,0,.2);
+    margin-top : -1px;
+    min-width : 150px;
+    position : absolute;
+}
+div#language div.selected, div#language div.list a
+{
+    display : block;
+    padding : 10px;
+    margin : 0;
+    text-decoration : none;
+    text-align : center;
+}
+div#language div.list a
+{
+    border-bottom : 1px solid #ccc;
+}
+div#language div.list a:last-child 
+{
+    border : none;
+}
+div#language div.list a:hover
+{
+    background-color : rgba(50,50,50,.1);
+}
+
+
+

@@ -1,0 +1,526 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <!-- CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">        
+        <link href="./css/default.css" rel="stylesheet">
+        <link href="./css/steps.css" rel="stylesheet">
+        <link href="./css/language.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:100,400,300,700,400italic,300italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <!-- JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
+        <script src="./js/default.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="./img/header/logo.png" alt="InstaForex" class="logo">
+                    </div>
+                    <div class="col-md-2 col-md-offset-7">
+                            <select id="language">
+                                <option class="ru" selected>Русский</option>
+                                <option class="gb">English</option>
+                                <option class="fr">French</option>
+                            </select>
+                            <script>$('#language').select();</script>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="title">Бездепозитный бонус<br>от ИнстаФорекс</h1>
+                        <p class="slogan">Начни торговать на рынке Форекс<br>без вложений</p>
+                        <div class="button get_bonus">
+                            <span>Получить бонус</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container quote">
+            <div class="row">
+                <div class="col-lg-12">
+                    <i class="quote"></i>
+                    <p>Хотите начать торговать на валютном рынке, но боитесь рисковать своими денежными средствами?</p>
+                    <p>С нами Вы сможете начать эффективную торговлю валютой с минимальными рисками и без лишних затрат!</p>
+                    <i class="quote closing"></i>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="description">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                    <i class="gift small"></i>
+                    <h2>Что такое <span>бездепозитный бонус</span>?</h2>
+                    <p>Бездепозитный бонус - это фиксированная сумма, которая будет зачислена компанией ИнстаФорекс при открытии торгового счета. Теперь начать торговлю на реальном счете можно без вложений, ведь начальный депозит вы получите в подарок.</p><p>Акция доступна только для клиентов компании, не имеющих активных счетов, и при отсутствии ранее зачисленных других видов бонусов. Получить бездепозитный бонус можно не более одного раза.</p><p>При успешной торговле вы сможете снять не только всю прибыль, но и бонусные средства.</p>
+                    </div>
+                    <i class="gift large"></i>
+                        <div id="carousel-description" class="carousel slide" data-ride="carousel">
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <i class="vertical-align"></i>
+                                <p>Шанс получить практический опыт работы на реальном торговом счете без вложений</p>
+                            </div>
+                            <div class="item">
+                                <i class="vertical-align"></i>
+                                <p>Максимальное кредитное плечо составляет 1:200</p>
+                            </div>
+                            <div class="item">
+                                <i class="vertical-align"></i>
+                                <p>Возможность опробовать свою торговую стратегию на реальных деньгах</p>
+                            </div>
+                          </div>
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-description" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-description" data-slide-to="1"></li>
+                                <li data-target="#carousel-description" data-slide-to="2"></li>
+                            </ol>
+                          <!-- Controls -->
+                          <a class="left carousel-control" href="#carousel-description" role="button" data-slide="prev"></a>
+                          <a class="right carousel-control" href="#carousel-description" role="button" data-slide="next"></a>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="dignity">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Почему трейдеры выбирают ИнстаФорекс?</h2>
+                                <figure>
+                                    <i class="dignity icon-1"></i>
+                                    <figcaption>ИнстаФорекс - это надежный брокер, работающий на рынке с <span class="text-red">2007 года.</span></figcaption>
+                                </figure>
+                                <figure>
+                                    <i class="dignity icon-2"></i>
+                                    <figcaption>Свыше <span class="text-red">2.000.000</span> трейдеров по всему миру стали клиентами компании ИнстаФорекс</figcaption>
+                                </figure>
+                                <figure>
+                                    <i class="dignity icon-3"></i>
+                                    <figcaption>Ежедневно к нам присоединяются свыше <span class="text-red">1000</span> человек, открывая новые торговые счета</figcaption>
+                                </figure>
+                                <figure>
+                                    <i class="dignity icon-4"></i>
+                                    <figcaption><span class="text-red">107</span> валютных инструментов, <span class="text-red">88</span> контрактов CFD на акции, спот - инструменты GOLD, SILVER, фьючерсы на <span class="text-red">26</span> инструментов</figcaption>
+                                </figure>
+                                <figure>
+                                    <i class="dignity icon-6"></i>
+                                    <figcaption>Круглосуточное<br />обслуживание <span class="text-red">24/7</span></figcaption>
+                                </figure>
+                                <figure>
+                                    <i class="dignity icon-5"></i>
+                                    <figcaption>Компания ИнстаФорекс предоставляет современные торговые платформы</figcaption>
+                                </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="honors">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Награды ИнстаФорекс</h2>
+                        <p>Начиная с 2007 года компания ИнстаФорекс была удостоена более чем 30 наград по версии престижных бизнес изданий и специализированных выставочных проектов.</p>
+                        <div id="carousel-honors" class="carousel slide hidden-sm hidden-xs" data-ride="carousel">
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <ul class="ch-grid">
+                                    <li>
+                                        <div class="ch-item ch-img-1">
+                                            <div class="ch-info">
+                                                <h3>Capital Finance International</h3>
+                                                <p>Лучший брокер в Азии 2015</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ch-item ch-img-2">
+                                            <div class="ch-info">
+                                                <h3>International Finance Magazine</h3>
+                                                <p>Лучший ECN-брокер - 2014 по версии</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ch-item ch-img-3">
+                                            <div class="ch-info">
+                                                <h3>Shanghai Forex Expo</h3>
+                                                <p>Лучший брокер в Азиатско-Тихоокеанском регионе 2015</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="item">
+                                <ul class="ch-grid">
+                                    <li>
+                                        <div class="ch-item ch-img-4">
+                                            <div class="ch-info">
+                                                <h3>CIOT EXPO</h3>
+                                                <p>Лучший брокер Азии 2014</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ch-item ch-img-5">
+                                            <div class="ch-info">
+                                                <h3>IAIR Awards</h3>
+                                                <p>Лучший брокер Восточной Европы 2014</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ch-item ch-img-6">
+                                            <div class="ch-info">
+                                                <h3>GBM Awards</h3>
+                                                <p>«Самый инновационный Форекс-бренд Азии»</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul> 
+                            </div>
+                            <div class="item">
+                                <ul class="ch-grid">
+                                    <li>
+                                        <div class="ch-item ch-img-7">
+                                            <div class="ch-info">
+                                                <h3>International Finance Magazine</h3>
+                                                <p>«Лучший ECN-брокер - 2015»</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ch-item ch-img-8">
+                                            <div class="ch-info">
+                                                <h3>IAIR Awards</h3>
+                                                <p>«Лучший Форекс-брокер в Восточной Европе»</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ch-item ch-img-9">
+                                            <div class="ch-info">
+                                                <h3>UK Forex Awards</h3>
+                                                <p>Лучший ECN брокер</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul> 
+                            </div>
+                          </div>
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-honors" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-honors" data-slide-to="1"></li>
+                                <li data-target="#carousel-honors" data-slide-to="2"></li>
+                            </ol>
+                        </div>
+                        
+                         <div id="carousel-honors2" class="carousel slide visible-sm visible-xs" data-ride="carousel">
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <ul class="ch-grid">
+                                    <li>
+                                        <div class="ch-item ch-img-1">
+                                            <div class="ch-info">
+                                                <h3>Instaforex</h3>
+                                                <p>Лучший брокер в Азии 2015 по версии Capital Finance International</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="item">
+                                <ul class="ch-grid">
+                                    <li>
+                                        <div class="ch-item ch-img-2">
+                                            <div class="ch-info">
+                                                <h3>Instaforex</h3>
+                                                <p>Лучший ECN-брокер - 2014 по версии International Finance Magazine</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul> 
+                            </div>
+                            <div class="item">
+                                <ul class="ch-grid">
+                                    <li>
+                                        <div class="ch-item ch-img-3">
+                                            <div class="ch-info">
+                                                <h3>Instaforex</h3>
+                                                <p>Лучший брокер в Азиатско-Тихоокеанском регионе 2015 по версии Shanghai Forex Expo</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>  
+                            </div>
+                            <div class="item">
+                                <ul class="ch-grid">
+                                    <li>
+                                        <div class="ch-item ch-img-4">
+                                            <div class="ch-info">
+                                                <h3>Instaforex</h3>
+                                                <p>Лучший брокер Азии по версии the China International Online Trading Expo (CIOT EXPO) 2014</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul> 
+                            </div>
+                            <div class="item">
+                                <ul class="ch-grid">
+                                    <li>
+                                        <div class="ch-item ch-img-5">
+                                            <div class="ch-info">
+                                                <h3>Instaforex</h3>
+                                                <p>Лучший брокер Восточной Европы 2014 по версии IAIR Awards</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul> 
+                            </div>
+                            <div class="item">
+                                <ul class="ch-grid">
+                                    <li>
+                                        <div class="ch-item ch-img-6">
+                                            <div class="ch-info">
+                                                <h3>Instaforex</h3>
+                                                <p>«Самый инновационный Форекс-бренд Азии» по версии GBM Awards</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul> 
+                            </div>
+                            <div class="item">
+                                <ul class="ch-grid">
+                                    <li>
+                                        <div class="ch-item ch-img-7">
+                                            <div class="ch-info">
+                                                <h3>Instaforex</h3>
+                                                <p>«Лучший ECN-брокер - 2015» по версии International Finance Magazine</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul> 
+                            </div>
+                            <div class="item">
+                                <ul class="ch-grid">
+                                    <li>
+                                        <div class="ch-item ch-img-8">
+                                            <div class="ch-info">
+                                                <h3>Instaforex</h3>
+                                                <p>«Лучший Форекс-брокер в Восточной Европе» по версии IAIR Awards</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul> 
+                            </div>
+                            <div class="item">
+                                <ul class="ch-grid">
+                                    <li>
+                                        <div class="ch-item ch-img-9">
+                                            <div class="ch-info">
+                                                <h3>Instaforex</h3>
+                                                <p>Лучший ECN брокер по версии UK Forex Awards</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul> 
+                            </div>
+                          </div>
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-honors2" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-honors2" data-slide-to="1"></li>
+                                <li data-target="#carousel-honors2" data-slide-to="2"></li>
+                                <li data-target="#carousel-honors2" data-slide-to="3"></li>
+                                <li data-target="#carousel-honors2" data-slide-to="4"></li>
+                                <li data-target="#carousel-honors2" data-slide-to="5"></li>
+                                <li data-target="#carousel-honors2" data-slide-to="6"></li>
+                                <li data-target="#carousel-honors2" data-slide-to="7"></li>
+                                <li data-target="#carousel-honors2" data-slide-to="8"></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="steps">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Как получить<br />БЕЗДЕПОЗИТНЫЙ БОНУС?</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <section id="grid" class="grid clearfix hidden-sm hidden-xs">
+                                <a data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                                    <figure>
+                                        <img src="./img/steps/img1.png" />
+                                        <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+                                        <figcaption>
+                                            <h4>Шаг 1:</h4>
+                                            <p>Откройте реальный торговый счет</p>
+                                            <button>Заполните форму ниже, откройте счет, и мы вышлем вам данные вашего торгового счета на указанный e-mail</button>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                                <a data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                                    <figure>
+                                        <img src="./img/steps/img2.png" />
+                                        <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+                                        <figcaption>
+                                            <h4>Шаг 2:</h4>
+                                            <p>Пройдите процедуру верификации</p>
+                                            <button>Загрузите копию документа для подтверждения вашей личности в клиентском кабинете</button>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                                <a data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                                    <figure>
+                                        <img src="./img/steps/img3.png" />
+                                        <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+                                        <figcaption>
+                                            <h4>Шаг 3:</h4>
+                                            <p>Заполните заявку</p>
+                                            <button>Заполните заявку на получение бездепозитного бонуса в клиентском кабинете</button>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                                <a data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                                    <figure>
+                                        <img src="./img/steps/img4.png" />
+                                        <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+                                        <figcaption>
+                                            <h4>Шаг 4:</h4>
+                                            <p>Используйте бонус и получите прибыль</p>
+                                            <button>Каждый клиент имеет возможность снять всю сумму бонусных средств при успешной торговле. Прибыль можно выводить в том случае, если она превышает 20% от суммы бонуса</button>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </section>
+                            <section class="steps2 visible-sm visible-xs">
+                                <figcaption>
+                                    <h4>Шаг 1:</h4>
+                                    <p><b>Откройте реальный торговый счет</b></p>
+                                    <p>Заполните форму ниже, откройте счет, и мы вышлем вам данные вашего торгового счета</p>
+                                </figcaption>
+                                <figcaption>
+                                    <h4>Шаг 2:</h4>
+                                    <p><b>Откройте реальный торговый счет</b></p>
+                                    <p>Загрузите копию документа для подтверждения вашей личности в клиентском кабинете</p>
+                                </figcaption>
+                                <figcaption>
+                                    <h4>Шаг 3:</h4>
+                                    <p><b>Откройте реальный торговый счет</b></p>
+                                    <p>Заполните заявку на получение бездепозитного бонуса в клиентском кабинете</p>
+                                </figcaption>
+                                <figcaption>
+                                    <h4>Шаг 4:</h4>
+                                    <p><b>Откройте реальный торговый счет</b></p>
+                                    <p>Каждый клиент имеет возможность снять всю сумму бонусных средств при успешной торговле. Прибыль можно выводить в том случае, если она превышает 20% от суммы бонуса</p>
+                                </figcaption>                           
+                            </section>
+                            <script>
+                                (function() {
+                                    function init() {
+                                        var speed = 250,
+                                            easing = mina.easeinout;
+                                        [].slice.call ( document.querySelectorAll( '#grid > a' ) ).forEach( function( el ) {
+                                            var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
+                                                pathConfig = {
+                                                    from : path.attr( 'd' ),
+                                                    to : el.getAttribute( 'data-path-hover' )
+                                                };
+                                            el.addEventListener( 'mouseenter', function() {
+                                                path.animate( { 'path' : pathConfig.to }, speed, easing );
+                                            } );
+                                            el.addEventListener( 'mouseleave', function() {
+                                                path.animate( { 'path' : pathConfig.from }, speed, easing );
+                                            } );
+                                        } );
+                                    }
+                                    init();
+                                })();
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="open_account">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Откройте счет в компании ИнстаФорекс и получите свой бездепозитный бонус!</h2>
+                    </div>
+                    <div class="row">
+                   
+                        <div class="col-md-6 form">
+                            <form>
+                                <section>
+                                    <label for="name">Имя(*)</label>
+                                    <input type="text" id="name">
+                                    <span class="status error">(X) ошибка</span>
+                                </section>
+                                <section>
+                                    <label for="email">Email(*)</label>
+                                    <input type="text" id="email">
+                                    <span class="status ready">готово</span>
+                                </section>
+                                <section>
+                                    <label for="phone">Телефон(*)</label>
+                                    <input type="text" id="phone">
+                                    <!--<span class="status error">(X) ошибка</span>-->
+                                </section>
+                                <section>
+                                    <input type="checkbox" id="agreement-1" checked="checked"/>
+                                    <label for="agreement-1">Согласен с условиями оферты</label>
+                                </section>
+                                <section>
+                                    <input type="checkbox" id="agreement-2" checked="checked"/>
+                                    <label for="agreement-2">Согласен на сбор, хранение и обработку своих персональных данных </label>
+                                </section>                                 
+                                <input type="submit" value="Открыть счет"> 
+                            </form>
+                        </div>
+                        <div class="col-md-6 contact">
+                            <p>Круглосуточная служба поддержки:</p>
+                            <p><span>8-800-2000-791</span><i class="separator"></i><img src="./img/open/img1.png" alt="tel"></p>
+                            <p><span>support@instaforex.com</span><i class="separator"></i><img src="./img/open/img2.png" alt="email"></p>
+                            <div class="social">
+                                <p><span>Понравилось наше предложение?<br>Поделитесь с друзьями</span></p>
+                                <a href="#"><i class="icon vk"></i></a>
+                                <a href="#"><i class="icon fb"></i></a>
+                                <a href="#"><i class="icon tw"></i></a>
+                                <a href="#"><i class="icon go"></i></a>
+                            </div>
+                        </div>                          
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 footer">
+                    <p>Торговля на валютном рынке Форекс и использование кредитного плеча предполагает существенные риски, кроме того может привести к частичной или полной потере денежных средств.<br>Убедитесь в том, что вы имеете достаточный уровень знаний и опыта для данного вида деятельности, а также осознаете возможные риски.</p>
+                    <p>InstaForex Group 2007-2016</p>
+                </div>
+                </div>
+            </div>
+        </div>
+       <div class="button-up hidden-xs" id="top"></div> 
+    </body>
+</html>
