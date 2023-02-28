@@ -1,0 +1,1307 @@
+/*
+    * Basic CSS styling promo page "100% Bonus"
+    * @author Tretyakov Andrey <andrey.tretyakov@instafxgroup.com>
+*/
+.row > div
+{
+    /*border : 1px dashed red;*/
+}
+.row
+{
+    /*border : 1px dashed black;*/
+}
+html, body
+{
+    height : 100%;
+}
+body
+{
+    font-family: 'Roboto', sans-serif !important;
+    position : relative;
+    min-width : 320px;
+    font-size : 18px;
+    background-image : url('../img/logos/bg-texture.png');
+    min-width : 320px;
+    overflow-x : hidden;
+}
+h1, h2, h3, h4, h5, h6
+{
+    margin : 0;
+    padding : 0;
+    font-size : 1em;
+    line-height : normal;
+    color : #000;
+}
+p
+{
+    line-height : normal;
+    margin : 0;
+    padding : 0;
+    font-size : 1em;
+    color : #000;
+}
+/*HEADER*/
+.header
+{
+    background-image : url('../img/header/bg_header.png');
+    background-repeat : no-repeat;
+    background-position : top center;
+    min-height : 878px;
+    padding-right : 0;
+    padding-left : 0;
+}
+.header::before
+{
+    content : '';
+    background-image : url('../img/header/bg_slogan.png');
+    background-repeat : no-repeat;
+    background-position : top;
+    width : 100%;
+    height : 524px;
+    position : absolute;
+    top : 30px;
+}
+.header .logo
+{
+    margin : 30px 0;
+    width : 100%;
+    max-width : 252px;
+}
+/* START select language */
+    .language-wrap
+    {
+        text-align : right;
+        position : relative;
+        z-index : 999;
+    }
+    div#language
+    {
+        margin : 30px 0 20px;
+        display : inline-block;
+        cursor : pointer;        
+    }
+    div#language, div#language div.list
+    {
+        min-width : 180px;
+    }
+    div#language div.list
+    {        
+        display : none;
+        position : absolute;
+        z-index : 999;
+        border : 1px solid rgba(0,0,0,.1);
+        background-color : rgba(0,0,0,.3);
+        border-radius : 5px;
+    }
+    div#language div.selected, div#language div.list a
+    {
+        display : block;
+        padding : 5px;
+        color : #fff;
+        text-decoration : none;
+        text-align : left;
+    }
+    div#language div.list a:hover
+    {
+         background-color : rgba(200,200,200,.3);
+    }
+    div#language span
+    {
+        vertical-align : middle;
+        margin : 0 10px;
+    }
+    div#language .flag
+    {
+        width : 24px;
+        height : 24px;
+        display : inline-block;
+        vertical-align : middle;
+    }
+    div#language div.selected div.arrow
+    {
+        display : inline-block;
+        border: 5px solid transparent;
+        border-top: 5px solid #fff;
+        vertical-align : middle;
+        margin : 8px 0 0;
+    }
+/* END select language */
+.slogan
+{
+    min-height : 460px;
+    position : relative;
+}
+.slogan section
+{
+    display : block;
+    margin : 105px auto 0;
+    max-width : 900px;
+    text-align : center;
+    -moz-transform: rotate(-6.5deg);
+    -ms-transform: rotate(-6.5deg);
+    -webkit-transform: rotate(-6.5deg);
+    -o-transform: rotate(-6.5deg);
+    transform: rotate(-6.5deg);
+}
+.slogan section > *
+{
+    -moz-transform: skewX(-6.5deg);
+    -ms-transform: skewX(-6.5deg);
+    -webkit-transform: skewX(-6.5deg);
+    -o-transform: skewX(-6.5deg);
+    transform: skewX(-6.5deg);
+    text-transform : uppercase;
+    font-weight : 700;
+}
+.slogan h1, .slogan section h3
+{
+    color : #fff;
+    text-shadow : 2px 2px 2px rgba(0,0,0,.9);
+}
+.slogan section h1
+{
+    font-size : 2.7em;
+}
+.slogan section h2
+{
+    font-size : 2.6em;
+    color : red;
+}
+.slogan section h3
+{
+    font-size : 1.7em;
+}
+.action
+{
+    position : relative;
+    left : 15px;
+    top : 37px;
+    max-width : 670px;
+}
+.action > *
+{
+    display : inline-block;
+}
+.action .ball
+{
+    position : relative;
+    z-index : 99;
+}
+.action figcaption
+{
+    color : #fff;
+    font-size : 1.7em;
+    text-transform : uppercase;
+    font-weight : 700;
+}
+.action figcaption h4
+{
+    position : absolute;
+    z-index : 98;
+    left : 93px;
+    top : -20px;
+    background-image : url('../img/header/red_bar.png');
+    width : 312px;
+    height : 84px;
+    background-position : top;
+    background-repeat : no-repeat;
+    transform: rotate(-6.5deg);
+    padding : 8px 33px 0px 108px;
+}
+.action figcaption p
+{
+    position : absolute;
+    left : 100px;
+    top : -7px;
+    transform: rotate(-6.5deg);
+    background: linear-gradient(to top right, rgba(0,0,0,.4), rgba(50,50,50,.05));
+    width : auto;
+    height : 142px;
+    vertical-align : top;
+    padding : 24px 20px 0 100px;
+    margin : 0;
+    text-shadow : 2px 2px 2px rgba(0,0,0,.9);
+}
+.action figcaption h4 > *, .action figcaption p > *
+{
+    transform: skewX(-6.5deg);
+    color : #fff;
+    display : block;
+    font-size : .91em;
+}
+/*HEADER FORM*/
+.form
+{
+    background-image : url('../img/form/bg_form.png');
+    background-repeat : no-repeat;
+    background-position : top center;
+    padding : 5px 50px;
+    text-align : center;
+    min-height : 515px;
+    margin-top : -335px;
+    position : relative;
+    z-index : 9999;
+    width : 100%;
+    max-width : 469px;
+    float : right;
+}
+.form h3
+{
+    color : #f50002;
+    margin : 30px auto;
+    display : block;
+    font-size : 1.4em;
+    font-weight : 700;
+}
+.form section
+{
+    display : block;
+    background-color : #fff;
+    border-radius : 5px;
+    padding : 10px;
+    margin : 0px auto 15px;
+    border : 1px solid #aaa;
+    box-shadow : inset 1px 1px 1px rgba(0,0,0,.2);
+    text-align : left;
+}
+.form section .icon
+{
+    vertical-align : middle;
+}
+.form section:last-child
+{
+    background-color : transparent;
+    border : none;
+    box-shadow : none;
+    text-align : center;
+}
+.form label
+{
+    font-weight : 300;
+    font-size : .9em;
+}
+input[type=text], input[type=email], input[type=password]
+{
+    display : inline-block;
+    vertical-align : middle;
+    text-align : center;
+    border : none;
+    font-size : 1.2em;
+}
+input[type=button], input[type=submit]
+{
+    border : none;
+    background-color : #f50002;
+    box-shadow : 2px 2px 1px #c10506;
+    color : #fff;
+    padding : 15px;
+    display : block;
+    margin : 10px auto;
+    border-radius : 5px;
+    font-weight : 600;
+    font-size : 1.4em;
+}
+input[type=button]:hover, input[type=submit]:hover
+{
+    border : none;
+    background-color : #c10506;
+
+}
+input[type=button], input[type=submit]
+{
+    width : 100%;
+    max-width : 400px;
+}
+input[type=text], input[type=email], input[type=password]
+{
+    width : 100%;
+    max-width : 280px;
+}
+/*LOGOS*/
+.logos .row 
+{
+    margin-top : 30px;
+    margin-bottom : 40px;
+}
+.logos .row > div:last-child
+{
+    text-align : right;
+}
+.logos h3
+{
+    font-weight : 400;
+    line-height : 1.5;
+    font-size : 1.25em;
+    margin-top : 50px;
+}
+.logos h3 b
+{
+    font-weight : 700;
+    font-size : 1.5em;
+}
+.logos figure
+{
+    text-align : center;
+}
+.logos figure img
+{
+    width : 100%;
+    max-width : 432px;
+}
+.logos figure figcaption
+{
+    font-size : .85em;
+    margin : 10px auto;
+}
+/*CAUSES*/
+.causes
+{
+    background-image : url('../img/causes/bg_block3.png');
+    background-repeat : no-repeat;
+    background-position : top center;
+    min-height : 1089px;
+}
+.causes .row
+{
+    margin-top : 170px;
+}
+.causes figure.title
+{
+    max-width : 277px;
+    width : 100%;
+    margin : 0 auto;
+    position : absolute;
+    top : 250px;
+    left : 180px;
+}
+.causes figure.title figcaption
+{
+    color : red;
+    text-align : center;
+    font-size : 37px;
+    font-weight : 700;
+    line-height : 1.6;
+    text-transform : uppercase;
+    margin-top : -189px;
+    margin-left : 36px;
+    width : 100%;
+    max-width : 200px;
+    -moz-transform: rotate(-7.5deg);
+    -ms-transform: rotate(-7.5deg);
+    -webkit-transform: rotate(-7.5deg);
+    -o-transform: rotate(-7.5deg);
+    transform: rotate(-7.5deg);
+}
+.causes figure.title figcaption > *
+{
+    -webkit-transform : skewX(-7.5deg); 
+	-moz-transform : skewX(-7.5deg); 
+	-ms-transform : skewX(-7.5deg); 
+	-o-transform : skewX(-7.5deg); 
+	transform : skewX(-7.5deg);
+    display : block;
+}
+.causes ul
+{
+    position : absolute;
+    top : 10px;
+    right : -100px;
+    list-style : none;
+    width : 600px;
+}
+.causes li
+{
+    color : #fff;
+    font-size : 1em;
+    font-weight : 400;
+}
+.causes li::before
+{
+    border : 3px solid #fff;
+    border-radius : 50%;
+    width : 90px;
+    height : 90px;
+    display : inline-block;
+    text-align : center;
+    background-image : url('../img/causes/icons.png');
+    background-repeat : no-repeat;
+    content : '';
+    vertical-align : middle;
+    margin : 0 20px 0 0;
+    background-color : red;
+    box-shadow : 0 0 2px rgba(0,0,0,.2);
+}
+.causes li:nth-child(1)
+{
+
+    margin-top : 40px;
+    margin-left : -90px;
+}
+.causes li:nth-child(1)::before
+{
+    background-position : 0 0;
+}
+.causes li:nth-child(2)
+{
+    margin-top : 25px;
+    margin-left : -20px;
+}
+.causes li:nth-child(2)::before
+{
+    background-position : -90px 0;
+}
+.causes li:nth-child(3)
+{
+    margin-top : 34px;
+    margin-left : -2px;
+}
+.causes li:nth-child(3)::before
+{
+    background-position : -180px 0;
+}
+.causes li:nth-child(4)
+{
+    margin-top : 25px;
+    margin-left : -20px;
+}
+.causes li:nth-child(4)::before
+{
+    background-position : -270px 0;
+}
+.causes li:nth-child(5)
+{
+    margin-top : 15px;
+    margin-left : -90px;
+
+}
+.causes li:nth-child(5)::before
+{
+    background-position : -360px 0;
+}
+/*WHYINSTA*/
+.whyInsta h2
+{
+    display : block;
+    margin : 20px auto 50px;
+    text-align : center;
+    width : 600px;
+    border-bottom : 3px solid #ff0003;
+    text-transform : uppercase;
+    color : #ff0003;
+    font-weight : 900;
+    font-size : 2.5em;
+    -moz-transform : rotate(-7deg);
+    -ms-transform : rotate(-7deg);
+    -webkit-transform : rotate(-7deg);
+    -o-transform : rotate(-7deg);
+    transform : rotate(-7deg);
+}
+.whyInsta h2 > *
+{
+    -webkit-transform : skewX(-7deg); 
+	-moz-transform : skewX(-7deg); 
+	-ms-transform : skewX(-7deg); 
+	-o-transform : skewX(-7deg); 
+	transform : skewX(-7deg);
+}
+.whyInsta .row > div > .row
+{
+    margin-top : 100px;
+}
+.whyInsta .row > div::before
+{
+    display : block;
+    width : 280px;
+    height : 280px;
+    position : absolute;
+    top : 370px;
+    content : url('../img/whyinsta/8.png');
+    margin : 0 auto;
+    left  : 39.5%;
+    left : calc(50% - 140px);   
+}
+.whyInsta ul
+{
+    list-style : none;
+    padding : 0;
+    margin : 0;
+    min-height : 900px;
+    position : relative;
+}
+.whyInsta ul li
+{
+    font-size : 1.2em;
+    text-align : center;
+    font-weight : 400;
+    vertical-align : top;
+    max-width : 350px;
+    width : 100%;
+    position : absolute;
+}
+.whyInsta ul li::before
+{
+    display : block;
+    width : 110px;
+    height : 110px;
+    border : 3px solid red;
+    border-radius : 50%;
+    content : '';
+    background-image : url('../img/whyinsta/icons.png');
+    background-repeat : no-repeat;
+    margin : 5px auto;
+}
+.whyInsta ul li:nth-child(1)
+{
+    top : 25px;
+    left : 405px;
+}
+.whyInsta ul li:nth-child(1)::before
+{
+    background-position : 0 0;
+}
+.whyInsta ul li:nth-child(2)
+{
+    top : 110px;
+    left : 75px;
+}
+.whyInsta ul li:nth-child(2)::before
+{
+    background-position : -100px 0;
+}
+.whyInsta ul li:nth-child(3)
+{
+    top : 110px;
+    left : 735px;
+}
+.whyInsta ul li:nth-child(3)::before
+{
+    background-position : -200px 0;
+}
+.whyInsta ul li:nth-child(4)
+{
+    top : 340px;
+    left : 760px;
+}
+.whyInsta ul li:nth-child(4)::before
+{
+    background-position : -300px 0;
+}
+.whyInsta ul li:nth-child(5)
+{
+    top : 340px;
+    left : 50px;
+}
+.whyInsta ul li:nth-child(5)::before
+{
+    background-position : -400px 0;
+}
+.whyInsta ul li:nth-child(6)
+{
+    top : 580px;
+    left : 160px;
+}
+.whyInsta ul li:nth-child(6)::before
+{
+    background-position : -500px 0;
+}
+.whyInsta ul li:nth-child(7)
+{
+    top : 580px;
+    left : 650px;
+}
+.whyInsta ul li:nth-child(7)::before
+{
+    background-position : -600px 0;
+}
+.whistle
+{
+    position : absolute;
+    right : -150px;
+    bottom : -200px;
+}
+/*HOWGET*/
+.howGet
+{
+    background-image : url('../img/howget/bg_block.png');
+    min-height : 1079px;
+    background-position : top center;
+    background-repeat : no-repeat;
+    position : relative;
+    z-index : 999;
+}
+.howGet .row
+{
+    margin-top : 200px;
+}
+.howGet h2
+{
+    display : block;
+    margin : 20px auto;
+    text-align : center;
+    width : 600px;
+    border-bottom : 3px solid #fff;
+    text-transform : uppercase;
+    color : #fff;
+    font-weight : 900;
+    font-size : 2.5em;
+    -moz-transform: rotate(7deg); /* Äëÿ Firefox */
+    -ms-transform: rotate(7deg); /* Äëÿ IE */
+    -webkit-transform: rotate(7deg); /* Äëÿ Safari, Chrome, iOS */
+    -o-transform: rotate(7deg); /* Äëÿ Opera */
+    transform: rotate(7deg);
+}
+.howGet h2 > *
+{
+    -webkit-transform : skewX(7deg); 
+	-moz-transform : skewX(7deg); 
+	-ms-transform : skewX(7deg); 
+	-o-transform : skewX(7deg); 
+	transform : skewX(7deg);
+}
+.howGet img.infographic
+{
+    margin : 100px auto 20px;
+}
+.howGet ul
+{
+    position : absolute;
+    bottom : 0;
+    list-style : none;
+    width : 100%;
+    width : calc(100% - 30px);
+    height : 350px;
+    padding : 0 !important;
+}
+.howGet li
+{
+    position : absolute;
+    color : #fff;
+    max-width : 200px;
+    width : 100%;
+    text-align : center;
+}
+.howGet li:nth-child(1)
+{
+    top : 5px;
+    left : -25px;
+}
+.howGet li:nth-child(2)
+{
+    top : 280px;
+    left : 270px;
+}
+.howGet li:nth-child(3)
+{
+    top : 280px;
+    left : 670px;
+}
+.howGet li:nth-child(4)
+{
+    top : 5px;
+    right: -25px;
+}
+/*FOOTER*/
+.footer
+{
+    background-image : url('../img/footer/bg_block6.png');
+    background-position : top center;
+    background-repeat : no-repeat;
+    background-color : #000;
+    min-height : 1062px;
+    margin-top : -150px;
+    position : relative;
+    padding-right : 0;
+    padding-left : 0;
+}
+.footer .row:first-child
+{
+    margin-top : 160px;
+    position : relative;
+}
+.footer .row > div
+{
+    position : relative;
+}
+.footer .action figcaption p
+{
+    background: linear-gradient(to top right, rgba(0,0,0,.6), rgba(0,0,0,.4));
+}
+.footer::before
+{
+    content : '';
+    background-image : url('../img/footer/footer_bg_slogan.png');
+    background-repeat : no-repeat;
+    background-position : top;
+    width : 100%;
+    height : 548px;
+    position : absolute;
+    top : 470px;
+}
+
+.slogan section > *
+{
+    -moz-transform: skewX(-6.5deg);
+    -ms-transform: skewX(-6.5deg);
+    -webkit-transform: skewX(-6.5deg);
+    -o-transform: skewX(-6.5deg);
+    transform: skewX(-6.5deg);
+    text-transform : uppercase;
+    font-weight : 700;
+}
+
+.footer .slogan section h2
+{
+    font-size : 2.6em;
+    color : #fef89a;
+}
+
+.copy p
+{
+    color : #fff;
+    margin : 20px auto;
+}
+@media (max-width: 1200px)
+{
+    /*HEADER*/
+    .header .action
+    {
+        display : none;
+    }
+    .form
+    {
+        margin : -200px auto 0px;
+        position : relative;
+        float : none;
+    }   
+    /*CAUSES*/
+    .causes .row
+    {
+        text-align : center;
+        position : relative;
+    }
+    .causes figure.title
+    {
+        position : relative;
+        top : auto;
+        left : auto;
+    }
+    .causes .round
+    {
+        display : none;
+    }
+    .causes ul
+    {
+        position : relative;
+        top : auto;
+        right : auto;
+        width : auto;
+        display : block;
+        margin : 15px auto;
+        padding : 0;
+    }
+    .causes li:nth-child(1),
+    .causes li:nth-child(2),
+    .causes li:nth-child(3),
+    .causes li:nth-child(4),
+    .causes li:nth-child(5)
+    {
+        margin-top : 0;
+        margin-left : 0;
+        text-align : center;
+    }
+    .causes li
+    {
+        margin : 15px;
+        width : 100%;
+        max-width : 300px;
+        display : inline-block;
+        vertical-align : top;
+    }    
+    .causes li::before
+    {
+        width : 90px;
+        height : 90px;
+        display : block;
+        vertical-align : initial;
+        margin : 5px auto;
+        background-color : transparent;
+    }    
+    /*WHYINSTA*/
+    .whyInsta .row
+    {
+        margin-top : -60px;
+    }
+    .whyInsta .row > div > .row
+    {
+        margin-top : 100px;
+    }
+    .whyInsta h2
+    {
+        display : block;
+        margin : 20px auto;
+        width : auto;
+        font-weight : 700;
+        font-size : 2.5em;
+        -moz-transform : none;
+        -ms-transform : none;
+        -webkit-transform : none);
+        -o-transform : none;
+        transform : none;
+    }
+    .whyInsta h2 > *
+    {
+        -webkit-transform : none; 
+	    -moz-transform : none; 
+	    -ms-transform : none; 
+	    -o-transform : none; 
+	    transform : none;
+    }  
+    .whyInsta ul
+    {
+        min-height : initial;
+        text-align : center;
+    }
+    .whyInsta ul li
+    {
+        max-width : 400px;
+        position : relative;
+        display : inline-block;
+        margin : 5px;
+        vertical-align : top;
+        font-size : 1em;
+    }
+    .whyInsta ul li:nth-child(1),
+    .whyInsta ul li:nth-child(2),
+    .whyInsta ul li:nth-child(3),
+    .whyInsta ul li:nth-child(4),
+    .whyInsta ul li:nth-child(5),
+    .whyInsta ul li:nth-child(6),
+    .whyInsta ul li:nth-child(7)
+    {
+        top : auto;
+        left : auto;
+    }
+    .whyInsta .row > div::before
+    {
+        display : block;
+        width : 100px;
+        height : 100px;
+        position : relative;
+        top : auto;
+        content : '';
+        background-image : url('../img/whyinsta/8.png');
+        background-size : 100%;
+        margin : 0 auto;
+        left : auto; 
+    }
+    .whistle
+    {
+        position : initial;
+        right : initial;
+        bottom : initial;
+        display : none;
+    }
+    /*HOWGET*/   
+    .howGet img.infographic
+    {
+        margin : initial;
+        display : none;
+    }
+    .howGet ul
+    {
+        position : relative;
+        bottom : initial;
+        list-style : none;
+        width : 100%;
+        height : auto;
+        padding : initial !important;
+        margin-top : 30px;
+        display : block;
+    }
+    .howGet li:nth-child(1),
+    .howGet li:nth-child(2),
+    .howGet li:nth-child(3),
+    .howGet li:nth-child(4)
+    {
+        top : 0 !important;
+        left : 0 !important;
+        position : relative;
+
+    }
+    .howGet li
+    {
+        position : relative;
+        color : #fff;
+        width : 100%;
+        text-align : center;
+        padding : 10px;
+        max-width : 320px;
+        display : block;
+        margin : 5px auto;
+    }
+    .howGet li:before
+    {
+        width : 100px;
+        height : 100px;
+        border-bottom : 2px solid #fff;
+        display : block;
+        margin : 5px auto;
+       
+    }
+    .howGet li:nth-child(1):before
+    {
+        content : url('../img/howget/1.png');
+    }
+    .howGet li:nth-child(2):before
+    {
+        content : url('../img/howget/2.png');
+    }
+    .howGet li:nth-child(3):before
+    {
+        content : url('../img/howget/3.png');
+    }
+    .howGet li:nth-child(4):before
+    {
+        content : url('../img/howget/4.png');
+    }
+    /*FOOTER*/
+    .footer
+    {
+        min-height : initial;
+        margin-top : -150px;
+    }
+    .footer .form
+    {
+        margin-top : 0;
+    }
+    .footer .row
+    {
+        margin-top : 0;
+    }
+    .footer .row:first-child 
+    {
+        margin-top : 200px;
+    }
+    .footer .action
+    {
+        position : relative;
+        left : initial;
+        top : initial;
+        max-width : 670px;
+        display : block;
+        margin : 10px auto;
+    }
+    .footer .action figcaption p
+    {
+        background: none;
+    }   
+    .footer .slogan
+    {
+        display : none;
+    }
+    .footer::before
+    {
+        content : '';
+        background-image : none;
+        width : initial;
+        height : initial;
+        position : initial;
+        top : initial;
+        display : none;
+    }
+}
+@media (max-width: 992px)
+{
+    /*HEADER*/
+    
+    .logos .row > div, .logos .row > div:last-child
+    {
+        text-align : center;
+        margin-top : 10px;
+    }
+    .logos .row
+    {
+        margin : 0;
+        margin-bottom : -50px;
+    }
+    /*WHYINSTA*/
+    .whyInsta ul li
+    {
+        max-width : 300px;
+    }
+}
+@media (max-width: 768px)
+{
+    body
+    {
+        font-size : 16px;
+    }
+    /*HEADER*/
+    .header .logo
+    {
+        margin : 30px 15px;
+    }    
+    .header .row > div
+    {
+        padding-left : 0;
+        padding-right : 0;
+    }
+    .header::before
+    {
+        display : none;
+    }
+    .header .slogan
+    {
+        min-height : initial;
+        position : relative;
+        background-color : rgba(250,250,250,.2);
+        padding : 0;
+    }
+    .header .slogan::before
+    {
+        background-color : rgba(250,250,250,.5);
+        min-height : 90%;
+        width : 100%;
+        margin : 2.5% auto;
+        content : '';
+        display : block;
+        position : absolute;
+    }
+    .header .slogan section
+    {
+        padding: 30px;
+        margin : 0 auto;
+        max-width : initial;
+        text-align : center;
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    /*FORM*/
+    .form
+    {
+        margin : 10px auto;
+    }
+    .form section
+    {
+        padding : 15px;
+        margin : 0px auto 20px;
+        text-align : center;
+    }
+    .form .icon
+    {
+        display : none;
+    }
+    input[type=text], input[type=email], input[type=password]
+    {
+        width : 100%;
+        max-width : none;
+    }
+    /*CAUSES*/
+    .causes
+    {
+        background-image : none;
+        background-color : #d60002;
+        min-height : initial;
+    }
+    .causes
+    {
+        margin-top : 75px;
+        margin-bottom : 15px;
+
+    }
+    .causes .row
+    {
+        margin-top : 15px;
+        margin-bottom : 30px;
+    }
+    .causes ul li
+    {
+        text-align : center !important;
+        margin : 10px auto;
+    }
+    /*WHYINSTA*/
+    .whyInsta .row
+    {
+        margin-top : 0px;
+    }
+    .whyInsta h2
+    {
+        font-size : 2em;
+    }
+    ul li
+    {
+        margin : 10px auto !important;
+    }   
+    /*HOWGET*/
+    .howGet h2
+    {
+        display : block;
+        margin : 10px auto;
+        width : auto;
+        font-size : 2em;
+    }
+    .howGet li
+    {
+        max-width : initial;
+    }
+    /*ACTION*/
+    .action
+    {
+
+        left : auto;
+        top : auto;
+        max-width : initial;
+        border : 1px solid rgba(0,0,0,.1);
+        display : block;
+        position : relative;
+        background-color : rgba(0,0,0,.5);
+        border-radius : 5px;
+        margin : 0 auto;
+    }
+    .action > *
+    {
+        display : block;
+    }
+    .action .ball
+    {
+        display : none;
+        z-index : auto;
+    }
+    .action figcaption
+    {
+        color : #fff;
+        font-size : 1.7em;
+        text-transform : uppercase;
+        font-weight : 400;
+        text-align : center;
+    }
+    .action figcaption h4
+    {
+        position : relative;
+        z-index : auto;
+        left : auto;
+        top : auto;
+        background-image : none;
+        width : auto;
+        height : auto;
+        background-position : initial;
+        background-repeat : initial;
+        transform: none;
+        padding : 10px;
+        font-size : 1.5em;
+    }
+    .action figcaption p
+    {
+        position : relative;
+        left : auto;
+        top : auto;
+        transform: none;
+        background: none;
+        width : auto;
+        height : auto;
+        vertical-align : initial;
+        padding : 10px;
+        margin : 0;
+        text-shadow : 2px 2px 2px rgba(0,0,0,.9);
+        font-size : .9em;
+        text-transform : initial;
+    }
+    .action figcaption h4 > *, .action figcaption p > *
+    {
+        transform: none;
+        color : #fff;
+        display : block;
+    }
+}
+@media (max-width: 480px)
+{
+    .header .slogan section h1
+    {
+        font-size : 2.2em;
+    }
+    .header .slogan section h2
+    {
+        font-size : 2.1em;
+        color : red;
+    }
+    .header .slogan section h3
+    {
+        font-size : 1.2em;
+    }
+    /* START select language */
+        .language-wrap
+        {
+            text-align : center;
+        }
+        div#language, div#language div.list
+        {
+            min-width : initial;
+        }
+        div#language span, div#language div.selected div.arrow
+        {
+            display : none;
+        }
+        div#language div.selected, div#language div.list a
+        {
+            padding : 10px;
+            text-align : center;
+        }
+    /* END select language */
+    .header .slogan
+    {
+        min-height : initial;
+        position : relative;
+        background-color : rgba(50,133,190,.7);
+        padding : 0;
+        margin : 0 auto;
+    }
+    .header .slogan::before
+    {
+        display : none;
+ 
+    }    
+    .form
+    {
+        margin : -7px auto 0;
+    }
+    .form section
+    {
+        padding : 10px;
+        margin : 0px auto 15px;
+        text-align : center;
+    }
+    /*LOGOS*/
+    .logos h3
+    {
+        font-weight : 300;
+        font-size : 1.2em;
+        margin-top : 0;
+    }
+    .logos h3 b
+    {
+        font-weight : 400;
+        font-size : 1.2em;
+    }
+    /*WHYINSTA*/
+    .whyInsta h2
+    {
+        font-size : 1.4em;
+    }  
+    .whyInsta .row > div::before
+    {
+        display : none;
+        position : initial;
+        background-image : none;
+        background-size : initial;
+        margin : initial;
+    }      
+    .whyInsta ul li
+    {
+        max-width : initial;
+        display : block;
+        margin : 10px auto;
+    }
+}
