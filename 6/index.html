@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="Content-Language" content="ru">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	 	
+    <!--CSS-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:600,300,600italic,300italic,400italic,400&subset=latin,cyrillic">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/hover.css/2.0.2/hover-min.css">   
+    <link rel="stylesheet" href="./css/jquery.arcticmodal.css" >
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/languageBar.css">
+</head>
+<body>   
+    <nav>
+        <img src="img/logo.png" alt="InstaForex" onclick="location.href='/'" />
+        <div class="nav-toggle">
+            <div id="nav-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="links">
+            <a href="index.html" class="active"><span>Бонусы ИнстаФорекс</span></a>
+            <a href="no-deposit-bonus.html"><span>Бездепозитный бонус</span></a>
+            <a href="on-the-first-deposit.html"><span>На первое пополнение</span><span>100% бонус<br />250% бонус</span></a>
+            <a href="for-every-refill.html"><span>На каждое пополение</span><span>30-40% бонус<br />55% бонус</span></a>
+            <a href="table.html"><span>Сравнение бонусов</span></a>
+            <a href="#" id="languageMobile"><span>Выбор языка</span></a>
+        </div>
+    </nav>    
+	<header>
+        <canvas id="canvas"></canvas><!--Звездное небо-->
+        <div class="space-background"></div>
+        <img src="img/glow.png" class="glow" />
+        <img src="img/eath.png" class="eath" />
+        <img src="img/sun.png" class="sun" />
+        <div class="language-wrap">
+            <!--
+                Language Bar ver.2.2
+                @author Tretyakov Andrey <andrey.tretyakov@instafxgroup.com>
+            -->
+            <select name="language">
+                <option value="ab">Абхазский</option>
+                <option value="az">Азербайджан.</option>
+                <option value="ay">Аймарский</option>
+                <option value="sq">Албанский</option>
+                <option value="en">Английский</option>
+                <option value="en-us">Американский</option>
+                <option value="ar">Арабский</option>
+                <option value="hy">Армянский</option>
+                <option value="as">Ассамский</option>
+                <option value="af">Африкаанс</option>
+                <option value="ba">Башкирский</option>
+                <option value="be">Белорусский</option>
+                <option value="bn">Бенгальский</option>
+                <option value="bg">Болгарский</option>
+                <option value="br">Бретонский</option>
+                <option value="cy">Валлийский</option>
+                <option value="hu">Венгерский</option>
+                <option value="vi">Вьетнамский</option>
+                <option value="gl">Галисийский</option>
+                <option value="nl">Голландский</option>
+                <option value="el">Греческий</option>
+                <option value="ka">Грузинский</option>
+                <option value="gn">Гуарани</option>
+                <option value="da">Датский</option>
+                <option value="zu">Зулу</option>
+                <option value="iw">Иврит</option>
+                <option value="ji">Идиш</option>
+                <option value="in">Индонезийский</option>
+                <option value="ia">Интерлингва</option>
+                <option value="ga">Ирландский</option>
+                <option value="is">Исландский</option>
+                <option value="es">Испанский</option>
+                <option value="it">Итальянский</option>
+                <option value="kk">Казахский</option>
+                <option value="km">Камбоджийск.</option>
+                <option value="ca">Каталанский</option>
+                <option value="ks">Кашмирский</option>
+                <option value="qu">Кечуа</option>
+                <option value="ky">Киргизский</option>
+                <option value="zh">Китайский</option>
+                <option value="ko">Корейский</option>
+                <option value="co">Корсиканский</option>
+                <option value="ku">Курдский</option>
+                <option value="lo">Лаосский</option>
+                <option value="lv">Латвийский</option>
+                <option value="la">Латынь</option>
+                <option value="lt">Литовский</option>
+                <option value="mg">Малагасийский</option>
+                <option value="ms">Малайский</option>
+                <option value="mt">Мальтийский</option>
+                <option value="mi">Маори</option>
+                <option value="mk">Македонский</option>
+                <option value="mo">Молдавский</option>
+                <option value="mn">Монгольский</option>
+                <option value="na">Науру</option>
+                <option value="de">Немецкий</option>
+                <option value="ne">Непальский</option>
+                <option value="no">Норвежский</option>
+                <option value="pa">Пенджаби</option>
+                <option value="fa">Персидский</option>
+                <option value="pl">Польский</option>
+                <option value="pt">Португальский</option>
+                <option value="ps">Пуштунский</option>
+                <option value="rm">Ретороманский</option>
+                <option value="ro">Румынский</option>
+                <option value="ru" selected>Русский</option>
+                <option value="sm">Самоанский</option>
+                <option value="sa">Санскрит</option>
+                <option value="sr">Сербский</option>
+                <option value="sk">Словацкий</option>
+                <option value="sl">Словенский</option>
+                <option value="so">Сомали</option>
+                <option value="sw">Суахили</option>
+                <option value="su">Суданский</option>
+                <option value="tl">Тагальский</option>
+                <option value="tg">Таджикский</option>
+                <option value="th">Тайский</option>
+                <option value="ta">Тамильский</option>
+                <option value="tt">Татарский</option>
+                <option value="bo">Тибетский</option>
+                <option value="to">Тонга</option>
+                <option value="tr">Турецкий</option>
+                <option value="tk">Туркменский</option>
+                <option value="uz">Узбекский</option>
+                <option value="uk">Украинский</option>
+                <option value="ur">Урду</option>
+                <option value="fj">Фиджи</option>
+                <option value="fi">Финский</option>
+                <option value="fr">Французский</option>
+                <option value="fy">Фризский</option>
+                <option value="ha">Хауса</option>
+                <option value="hi">Хинди</option>
+                <option value="hr">Хорватский</option>
+                <option value="cs">Чешский</option>
+                <option value="sv">Шведский</option>
+                <option value="eo">Эстонский</option>
+                <option value="et">Эсперанто</option>
+                <option value="jw">Яванский</option>
+                <option value="ja">Японский</option>
+            </select>
+        </div>
+        <h1>Территория Forex Бонусов</h1>
+        <p>Самый широкий выбор торговых бонусов для клиентов ИнстаФорекс</p>
+        <a href="#ex1" class="button hvr-float anchor">Выбрать Бонус</a>
+        <div class="specialOffer" onclick="location.hred='#'">
+            <h2>Специальное предложение!</h2>
+            <p>100% командный бонус на первое пополнение от ИнстаФорекс и ФК Ливерпуль</p>
+            <img src="./img/logo-2.png" alt="Instaforex | Liverpool" />
+            <p>Официальный Партнер Футбольного Клуба Ливерпуль в СНГ</p>
+        </div>
+    </header>    	
+	<article class="faq">
+        <h1>Часто задаваемые вопросы:</h1>
+		<div>
+            <section>
+                <h2>Что такое Форекс-бонусы?</h2>
+                <p>Это бонусные средства, которые компания ИнстаФорекс зачисляет на счет клиента после выполнения определенных условий: пополнения счета и/или его верификации.</p>
+            </section>
+            <section>
+                <h2>Зачем нужны Форекс-бонусы?</h2>
+                <p>С Форекс бонусами трейдер получает дополнительные средства для торговли либо начинает работу без собственных вложений.</p>
+            </section>      
+            <section>
+                <h2>Чем отличаются бонусы?</h2>
+                <p>Бонусы отличаются друг от друга максимальным размером, условиями зачисления на счет и условиями в торговле. Пожалуйста, ознакомьтесь с cоглашением об использовании бонуса, чтобы подать заявку на его получение.</p>
+            </section>
+            <section>
+                <h2>Кто может получить бонус?</h2>
+                <p>Каждый клиент компании ИнстаФорекс имеет право на получение бонуса. Бонусные программы рассчитаны как для новичков, так и для опытных трейдеров, которые уже имели раньше счета.</p>
+            </section>
+        </div>
+	</article>
+    <article class="bonuses" id="ex1">
+        <h1>Сравните ИнстаФорекс бонусы</h1>
+        <p>Компания ИнстаФорекс предлагает 3 вида бонусов: “Бездепозитный бонус”, “Бонус на первое пополнение” и “Бонус на каждое пополнение”. Они отличаются максимальным размером, условиями зачисления на счет и условиями в торговле. Подробную информацию можно найти в соглашении об использовании каждого бонуса или в Сравнительной таблице.<br />Выберете бонус, который подходит именно Вам!</p>
+        <div>
+            <section>
+                <h2>Бездепозитный бонус</h2>
+                <p>Начните торговать на рынке Форекс без вложений. Откройте счсет и компания ИнстаФорекс внесет первый депозитза Вас.</p>
+                <p>Для всех новых клиентов, прошедших процедуру верификации.</p>
+                <a href="no-deposit-bonus.html" class="button hvr-float">Подробнее</a>
+            </section>
+            <section>
+                <h2>Бонус на первое пополнение</h2>
+                <p>Пополните счет любым удобным для вас способом и получите приветственный бонус до 250%.</p>
+                <p>Для всех новых клиентов, прекрасная возможность значительно увеличить свой первый депозит.</p>
+                <a href="on-the-first-deposit.html" class="button hvr-float">Подробнее</a>
+            </section>
+            <section>
+                <h2>Бонус на каждое пополнение</h2>
+                <p>Бонус до 55% начисляется при каждом пополнеии счета на любую сумму.</p>
+                <p>Для всех клиентов, кто ранее не получал другие виды бонусов, выгоден в долгосрочной перспективе.</p>
+                <a href="for-every-refill.html" class="button hvr-float">Подробнее</a>
+            </section>
+        </div>
+    </article>
+	<aside>
+        <h4>Круглосуточная служба поддержки</h4>
+        <p>8-800-2000-791</p>
+        <a href="#" target="_blank" rel="me" title="VKontakte"></a>
+        <a href="#" target="_blank" rel="me" title="Facebook"></a>
+        <a href="#" target="_blank" rel="me" title="Twitter"></a>
+        <a href="#" target="_blank" rel="me" title="GooglePlus"></a>
+    </aside>
+	<footer>
+        <i class="fa fa-arrow-circle-up" aria-hidden="true" id="up"></i>
+        <p>ИнстаФорекс &copy; 2007-2016</p>
+        <p>Торговля на валютном рынке Форекс и использование кредитного плеча предполагает существенные риски, кроме того может привести к частичной или полной потере денежных средств. Убедитесь в том, что вы имеете достаточный уровень знаний и опыта для данного вида деятельности, а также осознаете возможные риски.</p>
+    </footer>
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/jquery/2.2.4/jquery.min.js"></script>
+    <script src="./js/jquery.arcticmodal.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.color-animation/1.6.0/jquery.animate-colors-min.js"></script>
+    <script src="./js/languageBar.js"></script>
+    <script src="./js/tabs.js"></script>
+    <script src="./js/styler.js"></script>
+    <script src="./js/space.js"></script>
+    <script src="./js/default.js"></script>   
+    <script>
+        $('#languageMobile').click
+            (
+                function ()
+                {
+                    var c = $('<div class="box-modal" />');
+
+                    c.html($('.language').html());
+                    c.prepend('<div class="box-modal_close arcticmodal-close"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> <span>Назад</span></div>');
+					    $.arcticmodal({
+						    content: c
+					    });
+                }
+            );
+    </script>
+</body>
+</html>
