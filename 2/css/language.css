@@ -1,0 +1,59 @@
+div#language
+{
+    display : inline-block;
+    font-size : 1.2em;
+}
+div#language div.selected
+{
+    cursor : pointer;
+}
+div#language div.list
+{
+    display : none;
+}
+div#language div.selected, div#language div.list a
+{
+    display : block;
+    padding : 5px 10px;
+    color : #fff;
+    text-shadow : 1px 1px 0 rgba(0,0,0,.5);
+    background-color : rgba(255,255,255,.3);
+    text-decoration : none;
+    text-align : left;
+}
+div#language div.selected
+{
+    background-color : transparent !important;
+}
+div#language:hover
+{
+    background-color : rgba(255,255,255,.3);
+}
+div#language div.list a
+{
+    border-top : 1px solid #fff;
+}
+div#language div.list a:hover
+{
+     background-color : rgba(255,255,255,.5);
+}
+div#language span
+{
+    vertical-align : middle;
+    margin : 0 10px;
+}
+div#language .flag
+{
+    width : 24px;
+    height : 24px;
+    display : inline-block;
+    vertical-align : middle;
+}
+div#language div.selected div.arrow
+{
+    display : inline-block;
+    border: 5px solid transparent;
+    border-top: 5px solid #fff;
+    vertical-align : middle;
+    margin : 8px 0 0;
+}

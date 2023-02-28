@@ -1,0 +1,672 @@
+html, body
+{
+    height : 100%;
+}
+.container, .container-fluid
+{
+
+}
+.row
+{
+    position : relative;
+
+}
+.row > div
+{
+
+}
+body
+{
+    background-color : #f4f4f2;
+    font-family : 'Segoe UI', Arial;
+    font-size : 14px;
+    min-width : 320px;
+
+    
+    background-color : #000c12;
+    color : #fff;
+}
+form
+{
+    position : relative;
+    display : inline-block;
+    margin : 0 auto;
+    max-width : 350px;
+    min-height : 220px;
+    width : 100%;
+}
+form input[type=text]
+{
+    background-color : transparent;
+    border : 1px solid #fff;
+    border-radius : 3px;
+    padding : 11px 8px;
+    text-align : center;
+    display : block;
+    margin : 0 auto;
+    max-width : 350px;
+    width : 90%;
+    color : #fff;
+    margin : 0 5%;
+    font-size : 1.2em;
+}
+::-webkit-input-placeholder { color:#fff; }
+::-moz-placeholder { color:#fff; } /* firefox 19+ */
+:-ms-input-placeholder { color:#fff; } /* ie */
+input:-moz-placeholder { color:#fff; }
+form input[type=button]
+{
+    background-color : #ffda0f;
+    border : 1px solid #ffda0f;
+    border-radius : 2px;
+    padding : 15px 8px;
+    text-align : center;
+    display : block;
+    color : #333;
+    max-width : 350px;
+    width : 90%;
+    font-size : 1.3em;
+    margin : 20px 5%;
+    text-shadow : 0 0 1px rgba(0,0,0,.5);
+}
+form input[type=text]:hover
+{
+    background-color : rgba(0,0,0,.2);
+}
+form input[type=text]:focus
+{
+    background-color : rgba(0,0,0,.2);
+}
+form input[type=button]:hover
+{
+    background-color : #009dd3;
+    border-color : #009dd3;
+    color : #fff;
+}
+form input[type=button]:active
+{
+    background-color : transparent;
+    color : #fff;
+    border-color : #fff;
+}
+form input[type=checkbox]
+{
+    margin : 5px;
+    vertical-align : middle;
+}
+.form_4
+{
+    margin : 0 auto;
+    width : 100%;
+}
+.form_4 label, .form_4 > input
+{
+    display : inline-block !important; 
+    vertical-align : middle;
+}
+.form_4 a
+{
+    color : #fff;
+    border-bottom : 1px dashed #fff;
+}
+.space-effect
+{
+    position : absolute;
+    top : 75px;
+    width : 100%;
+    padding : 0;
+    margin : 0;
+
+}
+.space-effect div
+{
+    padding : 0;
+    margin : 0;
+}
+#demo-canvas
+{
+    width : 100% !important;
+}
+div.header
+{
+    border-bottom : 1px solid #002037;
+}
+div.header > div
+{
+
+    padding : 10px 0;
+    /*background*/
+    background : #003e5d;
+    background : -moz-linear-gradient(left, #000c12 0%, #003e5d 20%, #003e5d 80%, #000c12 100%);
+    background : -webkit-linear-gradient(left, #000c12 0%, #003e5d 20%, #003e5d 80%, #000c12 100%);
+    background : -o-linear-gradient(left, #000c12 0%, #003e5d 20%, #003e5d 80%, #000c12 100%);
+    background : -ms-linear-gradient(left, #000c12 0%, #003e5d 20%, #003e5d 80%, #000c12 100%);
+    background : linear-gradient(left, #000c12 0%, #003e5d 20%, #003e5d 80%, #000c12 100%);
+
+}
+div.logo > img
+{
+
+    width : 100%;
+    max-width : 220px;
+}
+div.header .language-wrap
+{
+    position : absolute;
+    right : 0;
+    z-index : 999;
+    top : 10px;
+}
+div.bitcoin
+{
+    background-image : url('../img/bitcoin/img1.jpg');
+    background-position : top center;
+    background-repeat : no-repeat;
+
+    padding : 0px !important;
+}
+div.bitcoin > div.container-fluid, div.bitcoin > div.container-fluid > div.row
+{
+    padding : 0 !important;
+    margin : 0 !important;
+}
+div.bitcoin .bitcoin-container
+{
+    padding : 0 !important;
+}
+div.bitcoin div.title
+{
+    /*border : 2px solid red;*/
+    margin : 10% 0 0;
+}
+div.bitcoin div.title h1
+{
+    font-size : 4.2em;
+}
+div.bitcoin div.title h2
+{
+    font-size : 2.6em;
+    margin : 2.5% 0;
+}
+
+
+div.bitcoin div.title2
+{
+    position : absolute;
+    margin : 0 auto;
+    top : 360px;
+    left : 0;
+    background-image : url('../img/bitcoin/img3.png');
+    background-position : center;
+    background-repeat : no-repeat;
+    background-size : 40em;
+    padding : 55px 0;
+    color : #153548;
+    font-size : 1.4em;
+    text-shadow : 0 0 1px rgba(0,0,0,.5);
+    text-align : center;
+    display : block;
+    width : 100%;
+}
+
+div.description
+{
+    background-image : url('../img/description/img1.jpg');
+    background-position : top center;
+    background-repeat : no-repeat;
+    padding : 50px 0 0;
+    margin : -205px 0 0;
+    z-index : 100;
+    position : relative;
+    background-color : #00050b;
+}
+
+div.description p
+{
+    margin : 0px 75px;
+
+    line-height : 2;
+    text-indent : 1.5em;
+    text-align : justify;
+    font-size : 1.3em;
+
+}
+div.description > div > div > div
+{
+    border-bottom: 2px dashed rgba(0,0,0,.2);
+
+    margin: 20px auto 15px;
+    padding : 25px 0;
+
+}
+div.description > div > div > div:last-child
+{
+    margin : 0 auto !important;
+    padding : 15px 0 !important;
+
+}
+div.description .graph
+{
+    border : none;
+}
+div.description .graph img
+{
+    width : 80%;
+    width : calc(100% - 40px);
+    max-width : 705px;
+    margin : 0 20px;
+    
+}
+.upButton
+{
+    width : 44px;
+    height : 44px;
+    background-image : url('../img/description/img4.png');
+    background-position : 0 0;
+    background-repeat : no-repeat;
+    float : right;
+    margin : 0 20px;
+}
+.upButton:hover
+{
+    background-position : 0 -44px;
+    cursor : pointer;
+}
+.bitcoin-logo
+{
+    margin : 40px 0 0 !important;
+}
+.bitcoin-logo img
+{
+    padding : 30px 0 0;
+}
+.bitcoin-logo p
+{
+    color : #ffda0f;
+    font-size : 1.8em !important;
+    text-align : center !important;
+    display : block;
+    vertical-align : middle;
+    text-indent : 0em !important;
+    margin : 0 !important;
+}
+div.openaccount
+{
+    display : block;
+    width : 600px;
+    position : absolute;
+    z-index : 999;
+    left : calc(50% - 301px);
+    bottom : 175px;
+}
+div.openaccount > img.back
+{
+    width : 100%;
+}
+
+div.openaccount > div.text
+{
+    position : absolute;
+    width : 100%;
+    padding : 20px 0;
+    background-color : #0b88b6;
+    top : 20px;
+    font-size : 1.3em;
+
+}
+
+.mess
+{
+    display : none;
+    opacity : 0;
+    position : absolute;
+    top : 30px;
+    font-size : 1.3em;
+    line-height : 1.7;
+    text-align : center;
+    width : 100%;
+
+}
+.mess > a
+{
+    background-color : #ffda0f;
+    border : 1px solid #ffda0f;
+    border-radius : 2px;
+    padding : 15px 8px;
+    text-align : center;
+    display : inline-block;
+    margin : 20px 5%;
+    max-width : 300px;
+    width : 90%;
+    color : #000;
+    text-decoration : none;
+    font-size : 1.2em;
+    text-shadow : 0 0 1px rgba(0,0,0,.5);
+}
+.mess > a:hover
+{
+    background-color : #009dd3;
+    border-color : #009dd3;
+    color : #fff;
+}
+
+
+
+
+.bitcoin-wrap
+{
+    position : relative;
+    margin : 0 auto;
+    display : block;
+    width : 100%;
+}
+div.bitcoin-icon
+{
+    width : 100%;
+    height : 1000px;
+    background-image : url('../img/bitcoin/img2.png');
+    background-position : top center;
+    background-repeat : no-repeat;
+}
+
+img.earth, img.illumination
+{
+    width : 500px;
+    height : 500px;  
+    position : absolute;
+    bottom : 0px;
+    left : calc(50% - 250px);
+    left : -webkit-calc(50% - 250px);
+    left : -moz-calc(50% - 250px);
+    z-index : 99;
+}
+.instaforex
+{
+    padding : 10px 20px;
+    font-size : 1.2em;
+}
+.bitcoin-icon-2
+{
+    display : none;
+    width : 100%;
+    margin : 0 auto;
+}
+@media (max-width: 1199px)
+{
+    div.description .graph
+    {
+        text-align : center !important;
+    }
+}
+@media (max-width: 991px)
+{
+    div.bitcoin div.title h1
+    {
+        font-size : 3em;
+    }
+    div.bitcoin div.title h2
+    {
+        font-size : 2em;
+        margin : 5% 0 0;
+    }
+    div.logo > img
+    {
+        margin : 20px 0;
+    }
+    div.header .language-wrap
+    {
+        top : 20px;
+    }
+
+}
+@media (max-width: 767px)
+{
+    div.description p
+    {
+        margin : 20px;
+        line-height : 2;
+        font-size : 1em;
+        text-align : justify;
+    }
+    .bitcoin-wrap
+    {
+        position : relative;
+        margin : 0 auto;
+        display : block;
+        width : 100%;
+    }
+    div.bitcoin-icon
+    {
+        width : 100%;
+        height : 680px;
+        background-image : url('../img/bitcoin/img2.png');
+        background-position : top center;
+        background-repeat : no-repeat;
+        background-size : 80em;
+    }
+
+    img.earth, img.illumination
+    {
+        width : 260px;
+        height : 260px;  
+        position : absolute;
+        bottom : 85px;
+        left : calc(50% - 130px);
+        z-index : 99;
+    }
+
+
+
+    div.openaccount
+    {
+        display : block;
+        width : 310px;
+        position : absolute;
+        z-index : 999;
+        bottom : 240px;
+        left : calc(50% - 155px);
+        bottom : 180px;
+    }
+    div.openaccount > img.back
+    {
+        width : 100%;
+    }
+    div.openaccount > div.text
+    {
+        position : absolute;
+        width : 100%;
+        min-width : 0;
+        padding : 20px 0;
+        background-color : #0b88b6;
+        top : 10px;
+        font-size : 0.9em;
+    }
+    div.bitcoin div.title2
+    {
+        top : 220px;
+        font-size : 1.2em;
+    }
+    div.header .language-wrap
+    {
+        top : 15px;
+    }
+    .bitcoin-logo
+    {
+        margin : 0px 0 0 !important;
+    }
+    .bitcoin-logo img
+    {
+        padding : 0;
+    }
+    div#language div.selected, div#language div.list a
+    {
+        background-color : rgba(0,12,25,.9) !important;
+    }
+    div#language
+    {
+        border : 1px solid rgba(200,200,200,.5);
+        border-radius : 3px;
+        font-size : 1.2em;
+        margin : 0 20px;
+    }
+    .mess
+    {
+        font-size : 1em;
+        line-height : 1.5;
+        text-align : center;
+    }
+    div.bitcoin-icon
+    {
+        width : 100%;
+        height : 350px;
+        background-image : none;
+        background-position : top center;
+        background-repeat : no-repeat;
+        background-size : 80em;
+    }
+    .bitcoin-icon-2
+    {
+        display : block;
+    }
+    div.description > div > div > div
+    {
+        border-bottom : none;
+        margin: 5px auto;
+        padding : 10px 0;
+    }
+    .instaforex
+    {
+        padding : 0;
+        font-size : 1.2em;
+        text-align : center;
+    }
+
+    div.footer div
+    {
+        padding : 5px 0 !important;
+        margin : 0 auto !important;
+    }
+    .upButton
+    {
+        float : none;
+        margin : 0 auto;
+        border : none !important;
+    }
+    form
+    {
+        margin : 10px auto 0;
+    }
+}
+@media (max-width: 479px)
+{
+    div.bitcoin div.title h1
+    {
+        font-size : 2em;
+    }
+    div.bitcoin div.title h2
+    {
+        font-size : 1.5em;
+        margin : 5% 0 0;
+    }
+    .mess
+    {
+        font-size : 1em;
+        line-height : 1.5;
+    }
+    .bitcoin-logo p
+    {
+        font-size : 1.4em !important;
+        text-align : center !important;
+        display : block;
+        padding : 0 !important;
+        width : 80%;
+        margin : 0 auto !important;
+    }
+
+}
+
+
+.form_1
+{
+    animation-name : up1;
+    animation-fill-mode : forwards;
+    position : absolute;
+    opacity : 0;
+}
+.form_2
+{
+    animation-name : up2;
+    animation-fill-mode : forwards;
+    position : absolute;
+    opacity : 0;
+}
+.form_3
+{
+    animation-name : up3;
+    animation-fill-mode : forwards;
+    position : absolute;
+    opacity : 0;
+}
+.form_4
+{
+    animation-name : up4;
+    animation-fill-mode : forwards;
+    position : absolute;
+    opacity : 0;
+}
+
+
+@keyframes up1
+{
+    0%
+    {
+        top : 50px;
+        opacity : 0;
+    }
+    100%
+    {
+        top : -5px;
+        opacity : 1;
+    }
+}
+@keyframes up2
+{
+    0%
+    {
+        top : 100px;
+        opacity : 0;
+    }
+    100%
+    {
+        top : 60px;
+        opacity : 1;
+    }
+}
+@keyframes up3
+{
+    0%
+    {
+        top : 130px;
+        opacity : 0;
+    }
+    100%
+    {
+        top : 140px;
+        opacity : 1;
+    }
+
+}
+@keyframes up4
+{
+    0%
+    {
+        top : 110px;
+        opacity : 0;
+    }
+    100%
+    {
+        top : 122px;
+        opacity : 1;
+    }
+
+}
