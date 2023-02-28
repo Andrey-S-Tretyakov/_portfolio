@@ -1,0 +1,41 @@
+.tabs
+{
+}
+.tabs nav
+{
+    display : flex;
+
+}
+.tabs nav > *
+{
+    padding : 1em;
+    width : 100%;
+    text-align : center;
+    border-right : 1px solid #ccc;
+    border-bottom : 1px solid #ccc;
+}
+.tabs nav > *:last-child
+{
+    border-right : none;
+}
+.tabs nav > *:hover
+{
+    cursor : pointer;
+    background-color :#9d0000;
+    color : #fff;
+}
+.tabs nav > [data-checked=true]
+{
+    background-color : rgba(255,255,255,.1);
+    border-top : 1px solid #ccc;
+    border-bottom : none;
+    color : #9d0000;
+}
+.tabs > div > *:nth-child(n+2)
+{
+    display : none;
+}
+.tabs > div
+{
+    padding : 30px;
+}

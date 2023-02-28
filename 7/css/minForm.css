@@ -1,0 +1,200 @@
+.minForm,
+.minForm *
+{
+    margin : 0;
+    padding : 0;	
+}
+.minForm
+{
+    line-height : 1em;
+    padding : 0;
+    position : relative;
+}
+.minForm ol
+{
+    list-style : none;
+    overflow : hidden;
+    height : 3.7em;
+    padding-bottom : 1em;
+}
+.minForm ol li
+{
+    list-style : none;
+    display : flex;
+    flex-direction : column;
+    height : 4.75em;
+}
+.minForm ol li label
+{
+    font-size : 1.5em;
+}
+.minForm label
+{
+    margin : 0 0 .3em;
+    overflow : hidden;
+    min-height : 1em;
+    font-size : 1em;
+}
+/*Input*/
+.minForm input,
+.minForm button
+{
+    outline : none;
+}
+.minForm input[type=text],
+.minForm input[type=password],
+.minForm input[type=email],
+.minForm input[type=tel]
+{
+    font-size : 1em;
+    padding : .5em 5em .5em .5em;
+    border : 1px solid #ccc;
+    background-color : #fff;
+}
+/*Control*/
+.minForm .control
+{
+    position : relative;
+}
+.minForm .control > *
+{
+    position : absolute;
+}
+.minForm .count
+{
+    right : 0;
+    bottom : -1.5em;
+    color : #9d0000;
+}
+.minForm .progress-wrap
+{
+    bottom : 0;
+    left : 0;
+    width : 100%;
+    height : .5em;
+    background-color : rgba(0,0,0,.3);
+
+}
+.minForm .progress
+{
+    height : 100%;
+    width : 0;
+    background-color : #9d0000;
+}
+.minForm .buttons
+{
+    display : flex;
+    bottom : .5em;
+    right : 0;
+}
+.minForm .buttons > *
+{
+    font-size : 1.5em;
+    width : 1.5em;
+    height : 1.5em;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    color : #ccc;
+    background-color : transparent;
+    border : none;
+    border-radius : 0;
+}
+.minForm .buttons > *:hover
+{
+    color : #9d0000;
+    cursor : pointer;
+}
+.minForm .buttons > *[disabled]:hover
+{
+    color : #ccc;
+}
+.minForm .buttons i
+{
+    line-height : 1;
+    font-size : 1em;
+}
+.minForm .send
+{
+    margin : 2em auto 0;
+    text-align : center;
+}
+.minForm .send > *
+{
+    margin-bottom : .5em;
+    text-align : left;
+}
+.minForm input[type=submit]
+{
+    margin-top : .5em;
+    padding : .5em 2em;
+    font-size : 1em;
+    background-color : #9d0000;
+    color : #fff;
+    border : none;
+    text-align : center;
+    font-weight : normal;
+}
+.minForm input[type=submit]:hover
+{ 
+    background-color : rgba(230,0,0,1);
+    cursor : pointer;
+}
+.minForm input[type=submit][disabled],
+.minForm input[type=submit][disabled]:hover
+{
+    background-color : #ccc;
+    color : #999;
+}
+
+.minForm .finish
+{
+    margin : 0 auto -1.5em;
+    display : flex;
+    flex-direction : column;
+    align-items : stretch;
+    align-content : flex-start;
+}
+.minForm .finish > *
+{
+    margin : .5em auto;
+    width : 100%;
+}
+/*Rules*/
+@media (max-width: 1200px){} /*Large devices - Large desktops*/
+@media (max-width: 992px){} /*Medium devices - Desktops*/
+@media (max-width: 768px) /*Small devices - Tablets*/
+{
+    .minForm .send,
+    .minForm .finish
+    {
+        width : auto;
+    }
+} 
+@media (max-width: 480px) /*Extra small devices - Phones*/
+{
+}
+@media print  /*Print classes*/
+{
+	.minForm ol
+	{
+	    list-style : initial;
+	    overflow : none;
+	    height : auto;
+	    padding-bottom : initial;
+	}
+	.minForm input[type=text],
+	.minForm input[type=password],
+	.minForm input[type=email],
+	.minForm input[type=tel]
+	{
+	    padding : .5em 0;
+	    border : none;
+		border-bottom : 1px solid #000;
+	}
+	.minForm .control,
+	.minForm .send
+	{
+		display : none;
+	}	
+}
